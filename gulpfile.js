@@ -148,7 +148,7 @@ function scripts() {
   .pipe(concat('main.min.js'))
   .pipe(uglify())
   .pipe(dest(path.js.app))
-  .pipe(browserSync.reload());
+  .pipe(browserSync.stream());
 }
 
 
