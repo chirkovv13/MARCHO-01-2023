@@ -1,0 +1,123 @@
+.categories {
+  padding: 120px 0;
+  background-repeat: no-repeat;
+  background-position: left, center;
+
+  &__inner {
+    background-repeat: no-repeat;
+    background-position: right, center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 60px
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "one two two"
+      "one three four";
+    grid-gap: 30px;
+    min-height: 635px;
+  }
+
+  &__item {
+    padding: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &:nth-child(1) {
+      grid-area: one;
+      color: #5800e4;
+    }
+
+    &:nth-child(2) {
+      grid-area: two;
+      padding-top: 110px;
+      color: #fe3e57;
+    }
+
+    &:nth-child(3) {
+      grid-area: three;
+      color: #ffb534;
+    }
+
+    &:nth-child(4) {
+      grid-area: four;
+      color: #34c3ff;
+    }
+  }
+
+  &__descr {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    margin-bottom: 14px;
+  }
+
+  &__link {
+    @extend %roboto-400;
+    color: $title;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: all 0.4s;
+
+    &:hover {
+      color: $accent;
+      border-bottom: 1px solid $accent;
+    }
+  }
+}
+
+.info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+
+  &::before {
+    top: -40px;
+    left: -45px;
+    width: 120px;
+    height: 121px;
+    background-image: url('../images/decor/info-left.svg');
+  }
+
+  &::after {
+    bottom: -23px;
+    right: -23px;
+    width: 65px;
+    height: 52px;
+    background-image: url('../images/decor/info-right.svg');
+  }
+
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    padding: 60px 40px;
+    background-color: $white;
+    box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+  }
+
+  &__subtitle {
+    padding-top: 40px;
+    margin-bottom: 18px;
+    @extend %roboto-400;
+  }
+}

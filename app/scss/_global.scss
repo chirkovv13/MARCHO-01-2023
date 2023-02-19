@@ -6,7 +6,9 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  @extend %quicksand-400;
+  max-width: 2200px;
+  margin: 0 auto;
+  @extend %quicksand-500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: normal;
@@ -37,7 +39,18 @@ body {
 .title {
   font-size: 48px;
   @extend %roboto-700;
+  text-transform: uppercase;
+  text-align: center;
   color: $title;
+}
+
+.title-text {
+  max-width: 570px;
+  margin: 0 auto;
+  font-size: 16px;
+  @extend %quicksand-500;
+  text-align: center;
+  color: $default;
 }
 
 .subtitle {

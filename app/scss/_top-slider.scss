@@ -6,13 +6,9 @@
   background-repeat: no-repeat;
   background-size: contain;
 
-  &__wrapper {}
-
   &__container {
     max-width: 1520px;
   }
-
-  &__list {}
 
   &__item {
     padding-left: 160px;
@@ -32,6 +28,8 @@
     max-width: 670px;
     margin-bottom: 35px;
     font-size: 58px;
+    @extend %roboto-700;
+    color: $title;
   }
 
   &__text {
