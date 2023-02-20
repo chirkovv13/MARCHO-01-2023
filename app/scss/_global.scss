@@ -6,13 +6,16 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  @extend %quicksand-400;
+  max-width: 2200px;
+  margin: 0 auto;
+  @extend %quicksand-500;
   font-size: 16px;
   line-height: 1.2;
+  letter-spacing: normal;
   color: $default;
 }
 
-main {
+.main {
   flex-grow: 1;
 }
 
@@ -24,22 +27,30 @@ main {
 
 
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 185px;
   width: 100%;
   max-height: 30px;
   overflow: hidden;
-
-  &__img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
 }
 
 .title {
   font-size: 48px;
   @extend %roboto-700;
+  text-transform: uppercase;
+  text-align: center;
   color: $title;
+}
+
+.title-text {
+  max-width: 570px;
+  margin: 0 auto;
+  font-size: 16px;
+  @extend %quicksand-500;
+  text-align: center;
+  color: $default;
 }
 
 .subtitle {
@@ -49,8 +60,9 @@ main {
 }
 
 .btn {
+  display: inline-block;
   width: 100%;
-  padding: 17px;
+  padding: 14px 10px;
   @extend %roboto-400;
   text-align: center;
   text-transform: uppercase;
@@ -58,4 +70,5 @@ main {
   color: $white;
   background-color: $accent;
   box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+  overflow: hidden;
 }

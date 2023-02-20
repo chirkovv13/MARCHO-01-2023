@@ -1,0 +1,38 @@
+.product {
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    max-width: 550px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__list {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      '';
+    grid-gap: 30px;
+  }
+
+  &__link {
+    display: block;
+    max-width: 170px;
+    color: $title;
+    border: 1px solid $accent;
+    background-color: $white;
+    box-shadow: none;
+  }
+}

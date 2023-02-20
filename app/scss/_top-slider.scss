@@ -1,0 +1,92 @@
+.top-slider {
+  padding-top: 65px;
+  padding-bottom: 40px;
+  background-color: $bg;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &__container {
+    max-width: 1520px;
+  }
+
+  &__item {
+    padding-left: 160px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    padding-top: 125px;
+    padding-bottom: 200px;
+  }
+
+  &__title {
+    max-width: 670px;
+    margin-bottom: 35px;
+    font-size: 58px;
+    @extend %roboto-700;
+    color: $title;
+  }
+
+  &__text {
+    max-width: 470px;
+    margin-bottom: 55px;
+  }
+
+  &__button {
+    max-width: 160px;
+  }
+
+  &__img {
+    object-fit: contain;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: -70px;
+
+    li {
+      margin: 0 3px;
+      line-height: 0;
+
+      button {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        font-size: 0;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        background-color: transparent;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $default;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &.slick-active {
+        button {
+          border-color: $accent;
+
+          &::before {
+            background-color: $accent;
+          }
+        }
+      }
+    }
+  }
+}
