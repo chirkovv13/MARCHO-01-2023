@@ -1,5 +1,6 @@
 $(function () {
 
+    // слфйдер
   $('.top-slider__list').slick({
     dots: true,
     arrows: false,
@@ -8,6 +9,7 @@ $(function () {
     autoplaySpeed: 2000
   });
 
+    // рейтинг
   $('.product-item__star').rateYo({
     readOnly: true,
     starWidth: '17px',
@@ -15,6 +17,7 @@ $(function () {
     ratedFill: '#ffc35b',
   });
 
+  // таймер
   function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
@@ -57,5 +60,7 @@ $(function () {
   
   const deadline = $('.time').attr('data-time');
   initializeClock('time', deadline);
+
+    // ************
 
 });
