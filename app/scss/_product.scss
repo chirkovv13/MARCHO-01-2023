@@ -26,13 +26,4 @@
       '';
     grid-gap: 30px;
   }
-
-  &__link {
-    display: block;
-    max-width: 170px;
-    color: $title;
-    border: 1px solid $accent;
-    background-color: $white;
-    box-shadow: none;
-  }
 }
