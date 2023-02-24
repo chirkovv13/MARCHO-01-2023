@@ -102,4 +102,12 @@
   &__bottom-pay-item:not(:last-child) {
     margin-right: 25px;
   }
+
+  &__bottom-pay-img {
+    display: block;
+    max-width: 70px;
+    width: 100%;
+    height: 20px;
+    object-fit: cover;
+}
 }
