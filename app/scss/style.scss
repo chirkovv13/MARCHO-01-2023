@@ -1,15 +1,18 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
+@import 'config/vars';
+@import 'config/fonts';
+@import 'config/reset';
+@import 'config/libs';
+@import 'config/global';
 
-@import 'header';
-@import 'top-slider';
-@import 'categories';
-@import 'video';
-@import 'product';
-@import 'product-item';
-@import 'footer';
+@import 'components/header';
+@import 'components/footer';
 
-@import 'media';
+@import 'pages/index/top-slider';
+@import 'pages/index/categories';
+@import 'pages/index/video';
+@import 'pages/index/product';
+@import 'pages/index/product-item';
+@import 'pages/index/promo';
+@import 'pages/index/blog';
+
+@import 'layout/media';

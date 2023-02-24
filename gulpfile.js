@@ -3,6 +3,7 @@ const { src, dest, watch, parallel, series } = require('gulp');
 const del            = require('del');                                 //Удаление файлов
 const browserSync    = require('browser-sync').create();               //Обновление браузера
 const scss           = require('gulp-sass')(require('sass'));          //Препроцессор CSS
+const sourcemaps     = require('gulp-sourcemaps');                     //Карта для CSS
 const concat         = require('gulp-concat');                         //Объединение и изменение имени
 const babel          = require('gulp-babel');                          //Поддержка старых браузеров для JS
 const uglify         = require('gulp-uglify');                         //Минификация файлов JS
@@ -22,7 +23,7 @@ const notify         = require('gulp-notify');                         //Отп�
 const fonter         = require('gulp-fonter');                         //Конвертация шрифтов 
 const ttf2woff2      = require('gulp-ttf2woff2');                      //Конвертация шрифтов ttf2 to woff2
 
-// const (имя константы для использования плагина) = require('plagin');
+// const (имя константы для использования плагина/таска) = require('plagin');
 // function (имя функции)(params) {}
 
 //Конфигурация
@@ -63,7 +64,7 @@ const path           = {
     app:     pathSrc + "/images",
     watch:   pathSrc + "/images/**/*.{png,jpg,jpeg,gif}",
     webp:    pathSrc + "/images/**/*.webp",
-    svg:     pathSrc + "/images/icon/**/*.svg",
+    svg:    [pathSrc + "/images/**/*.svg", "!app/images/sprite.svg"],
     dest:   pathDest + "/images"
   },
 
@@ -115,23 +116,28 @@ function html() {
 
 //Обработка CSS
 function styles() {
-  return src(path.css.src, {sourcemaps: true})
+  // return src(path.css.src, {sourcemaps: true})
+  return src(path.css.src)
   .pipe(plumber({
     errorHandler: notify.onError(error => ({
       title: 'CSS',
       message: error.message
     }))
   }))
+  .pipe(sourcemaps.init())
   .pipe(webpCss())
   .pipe(scss({outputStyle: 'expanded'}))
-  .pipe(dest(path.css.app, {sourcemaps: true}))
+  // .pipe(dest(path.css.app, {sourcemaps: true}))
+  .pipe(dest(path.css.app))
   .pipe(autoprefixer({
     overrideBrowserslist: ['last 10 version'], 
     grid: true
   }))
   .pipe(scss({outputStyle: 'compressed'}))
   .pipe(concat('style.min.css'))
-  .pipe(dest(path.css.app, {sourcemaps: true}))
+  .pipe(sourcemaps.write())
+  // .pipe(dest(path.css.app, {sourcemaps: true}))
+  .pipe(dest(path.css.app))
   .pipe(browserSync.stream());
 }
 

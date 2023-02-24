@@ -19,9 +19,6 @@
 
   &__box {
     position: relative;
-    max-width: 370px;
-    width: 100%;
-    height: 370px;
     margin-bottom: 30px;
 
     &:hover .product-item__link-box {
@@ -30,6 +27,9 @@
   }
 
   &__img {
+    max-width: 370px;
+    width: 100%;
+    height: 370px;
     object-fit: cover;
   }
 
