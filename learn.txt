@@ -6,8 +6,12 @@ include css что то надо написать в галпфайл чтобы
 
 2023
 
-* добавить favicon
-* вписать title для head
++++ * отремонтировать soursmap
++++ * добавить favicon
++++ * вписать title для head
++++ * в html добавить svgSprite
+
+* svgSprite не работает на предпродакшене
 * добавить sr-only :
                 <span class="sr-only">search</span>
 * добавить sr-only дял form:
@@ -15,8 +19,11 @@ include css что то надо написать в галпфайл чтобы
                   <input class="footer__top-mail" type="email" name="email" placeholder="Email address">
                   <span class="sr-only">enter your email address</span>
                 </label>
-* в html добавить svgSprite
                 <svg class="video__play" width="127" height="127">
                   <use href="images/sprite.svg#video-play"></use>
                 </svg>
 * модульность файлов html, scss: вместе или по папкам
+
+
+gulp-svgmin — минификация SVG
+gulp-cheerio — удаление лишних атрибутов из svg

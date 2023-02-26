@@ -1,7 +1,8 @@
 .blog {
   padding: 120px 0 160px;
   background-repeat: no-repeat;
-  background-position: 40% 80%;
+  background-position: 40% 135%;
+  background-size: 1627px, 369px;
 
   &__title {
     margin-bottom: 30px;
@@ -33,7 +34,8 @@
   &__more-link {
     transition: all 0.4s;
 
-    path {
+    svg {
+      fill: $default;
       transition: all 0.4s;
     }
   }
@@ -53,10 +55,11 @@
     .blog__more-link {
       color: $accent;
 
-      path {
+      svg {
         fill: $accent;
       }
     }
+
   }
 
   &__img-link {
@@ -87,6 +90,10 @@
   &__date {
     display: flex;
     align-items: center;
+
+    svg {
+      fill: $default;
+    }
   }
 
   &__subtitle {
