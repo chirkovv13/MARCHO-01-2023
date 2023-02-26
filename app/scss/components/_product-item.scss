@@ -51,13 +51,11 @@
   &__link {
     display: flex;
     padding: 5px 24px;
+    transition: all 0.4s;
+    fill: $title;
 
-    &:hover path {
+    &:hover {
       fill: $accent;
-    }
-
-    path {
-      transition: all 0.4s;
     }
   }
 

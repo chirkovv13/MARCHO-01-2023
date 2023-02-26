@@ -1,18 +1,17 @@
-@import 'config/vars';
 @import 'config/fonts';
 @import 'config/reset';
-@import 'config/libs';
+@import 'config/vars';
 @import 'config/global';
+@import 'config/libs';
 
 @import 'components/header';
-@import 'components/footer';
-
 @import 'pages/index/top-slider';
 @import 'pages/index/categories';
 @import 'pages/index/video';
 @import 'pages/index/product';
-@import 'pages/index/product-item';
+@import 'components/product-item';
 @import 'pages/index/promo';
 @import 'pages/index/blog';
+@import 'components/footer';
 
 @import 'layout/media';

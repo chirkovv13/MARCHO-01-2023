@@ -64,7 +64,9 @@ const path           = {
     app:     pathSrc + "/images",
     watch:   pathSrc + "/images/**/*.{png,jpg,jpeg,gif}",
     webp:    pathSrc + "/images/**/*.webp",
+    sprite:  pathSrc + "/images/sprite.svg",
     svg:    [pathSrc + "/images/**/*.svg", "!app/images/sprite.svg"],
+    // svg:    [pathSrc + "/images/icon/*.svg", "!app/images/sprite.svg"],
     dest:   pathDest + "/images"
   },
 
@@ -84,7 +86,7 @@ function watching() {
   watch(path.css.watch, styles);
   watch(path.js.watch, scripts);
   watch(path.img.watch, series(cleanWebp, imagesApp, html));
-  watch(path.img.svg, svgSprite);
+  watch(path.img.svg, series(cleanSprite, svgSprite, html));
 }
 
 //Сервер
@@ -239,6 +241,11 @@ function cleanWebp() {
   return del(path.img.webp)
 }
 
+//Очистка директории images от cleanSprite
+function cleanSprite() {
+  return del(path.img.sprite)
+}
+
 //Сборка
 function buildDist() {
   return src(path.build, {base: pathSrc})
@@ -251,6 +258,7 @@ exports.styles      = styles;
 exports.scripts     = scripts;
 exports.imagesApp   = imagesApp;
 exports.imagesDist  = imagesDist;
+exports.cleanSprite = cleanSprite;
 exports.svgSprite   = svgSprite;
 exports.server      = server;
 exports.watching    = watching;
