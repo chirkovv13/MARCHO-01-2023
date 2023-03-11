@@ -22,9 +22,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
 }
-
 
 .logo {
   display: flex;
@@ -94,4 +92,52 @@ body {
   border: 1px solid $accent;
   background-color: transparent;
   overflow: hidden;
+}
+
+.bredcrumbs {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: inline-flex;
+    padding-left: 25px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url('../images/icon/home-icon.svg');
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      right: -25px;
+      width: 9px;
+      height: 10px;
+      background-image: url('../images/icon/angle-right.svg');
+    }
+
+    &:last-child {
+      color: $accent;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
 }

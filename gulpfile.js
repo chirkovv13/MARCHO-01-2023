@@ -37,8 +37,9 @@ const path           = {
   },
   
   html: {
-    src:     pathSrc + "/html/main.html",
-    watch:   pathSrc + "/html/**/*.html"
+    // src:     pathSrc + "/html/main.html",
+    src:    [pathSrc + "/html/**/*.html", "!app/html/**/_*.html"],
+    watch:   pathSrc + "/html/**/*.html",
   },
 
   css: {
@@ -71,7 +72,8 @@ const path           = {
   },
 
   build: [
-            "app/index.html",
+            // "app/index.html",
+            "app/*.html",
             "app/css/style.min.css",
             "app/js/main.min.js",
             "app/images/sprite.svg",
@@ -82,7 +84,7 @@ const path           = {
 
 //Наблюдение за файлами
 function watching() {
-  watch(path.html.watch, html).on('change', browserSync.reload);
+  watch(path.html.watch, series(cleanHtml, html)).on('change', browserSync.reload);
   watch(path.css.watch, styles);
   watch(path.js.watch, scripts);
   watch(path.img.watch, series(cleanWebp, imagesApp, html));
@@ -111,7 +113,7 @@ function html() {
   .pipe(htmlmin({
     collapseWhitespace: true
   }))
-  .pipe(rename('index.html'))
+  // .pipe(rename('index.html'))
   .pipe(dest(pathSrc))
   .pipe(browserSync.stream());
 }
@@ -236,12 +238,17 @@ function cleanDist() {
   return del(pathDest)
 }
 
+//Очистка директории от лишних HTML
+function cleanHtml() {
+  return del("./app/*.html")
+}
+
 //Очистка директории images от webp
 function cleanWebp() {
   return del(path.img.webp)
 }
 
-//Очистка директории images от cleanSprite
+//Очистка директории images от Sprite
 function cleanSprite() {
   return del(path.img.sprite)
 }
@@ -254,6 +261,7 @@ function buildDist() {
 
 // exports.(имя для вызова таска) = (имя функции);
 exports.html        = html;
+exports.cleanHtml        = cleanHtml;
 exports.styles      = styles;
 exports.scripts     = scripts;
 exports.imagesApp   = imagesApp;
