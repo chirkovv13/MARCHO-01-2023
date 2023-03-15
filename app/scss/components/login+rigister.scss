@@ -23,8 +23,6 @@
     @extend %roboto-700;
     color: $accent;
   }
-
-  &__form {}
 }
 
 .modal-form {
@@ -53,6 +51,13 @@
 
   &__text {
     margin-bottom: 30px;
+    & p:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    // &.modal-form__text p+p {
+    //   margin-bottom: 30px;
+    // }
   }
 
   &__checkbox {
