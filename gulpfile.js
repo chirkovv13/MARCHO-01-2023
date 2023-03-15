@@ -84,7 +84,7 @@ const path           = {
 
 //Наблюдение за файлами
 function watching() {
-  watch(path.html.watch, series(cleanHtml, html)).on('change', browserSync.reload);
+  watch(path.html.watch, series(html)).on('change', browserSync.reload);
   watch(path.css.watch, styles);
   watch(path.js.watch, scripts);
   watch(path.img.watch, series(cleanWebp, imagesApp, html));
@@ -261,7 +261,7 @@ function buildDist() {
 
 // exports.(имя для вызова таска) = (имя функции);
 exports.html        = html;
-exports.cleanHtml        = cleanHtml;
+exports.cleanHtml   = cleanHtml;
 exports.styles      = styles;
 exports.scripts     = scripts;
 exports.imagesApp   = imagesApp;
@@ -275,5 +275,5 @@ exports.cleanDist   = cleanDist;
 exports.cleanWebp   = cleanWebp;
 exports.buildDist   = buildDist;
 
-exports.build       = series(cleanDist, cleanWebp, imagesApp, buildDist, imagesDist);
+exports.build       = series(cleanDist, cleanHtml, html, cleanWebp, imagesApp, buildDist, imagesDist);
 exports.default     = series(html, styles, font, imagesApp, svgSprite, parallel(scripts, server, watching));

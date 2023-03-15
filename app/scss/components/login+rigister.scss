@@ -1,0 +1,73 @@
+.modal {
+  max-width: 570px;
+  margin: 0 auto 120px;
+  padding-top: 120px;
+
+  &__links {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    @extend %roboto-400;
+    font-size: 22px;
+    color: $default-darker;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
+  &__link--active {
+    @extend %roboto-700;
+    color: $accent;
+  }
+
+  &__form {}
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    @extend %quicksand-500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: $default;
+    border: none;
+    background-color: $bg;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__checkbox {
+    margin-bottom: 20px;
+  }
+
+  &__check {
+    border-radius: 0;
+  }
+
+  &__btn {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    color: $accent;
+  }
+}
