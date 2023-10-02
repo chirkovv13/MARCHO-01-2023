@@ -1,0 +1,16 @@
+.top {
+  
+  &__container {
+    max-width: 1700px;
+    padding: 140px 0;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+}

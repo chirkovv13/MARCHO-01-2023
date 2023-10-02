@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARCHO | page</title>
+
+  <link rel="icon" href="./images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <!-- @@include('components/_header.html',
+  {
+    @@header.header--page-404
+  }) -->
+
+  <header class="header header--page-404">
+    <div class="container">
+      <div class="header__inner">
+
+        <a class="logo" href="#">
+          <img class="logo__img" src="./images/logo.png" alt="logo MARCHO">
+        </a>
+
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link header__menu-link--active" href="#">
+                Home
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">
+                Shop
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">
+                Page
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">
+                Blog
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="user-nav">
+          <li class="user-nav__item">
+            <a class="user-nav__item-link" href="#">
+              <span class="sr-only">user</span>
+              <svg width="20" height="20">
+                <use href="./images/sprite.svg#icon--user"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__item-link" href="#">
+              <span class="sr-only">search</span>
+              <svg width="20" height="20">
+                <use href="./images/sprite.svg#icon--search"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__item-link" href="#">
+              <span class="sr-only">heart</span>
+              <span class="user-nav__num">3</span>
+              <svg width="20" height="20">
+                <use href="./images/sprite.svg#icon--heart"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__item-link" href="#">
+              <span class="sr-only">cart</span>
+              <span class="user-nav__num">7</span>
+              <svg width="22" height="20">
+                <use href="./images/sprite.svg#icon--cart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="page-404">
+      <div class="container">
+        <div class="page-404__inner">
+          <div class="page-404__content">
+            <h2 class="page-404__tittle title">OPPS! Page Not Found!!</h2>
+            <div class="page-404__text">
+              <p>
+                We,re sorry but we can’t seem to find the pages you request. This might be because you have typed the
+                web address not find incorrectly.
+              </p>
+            </div>
+            <a class="page-404__btn btn" href="#">Back to home</a>
+          </div>
+          <img class="page-404__img" src="./images/decor/page-404.png" alt="404 img">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @@include('components/_footer.html')
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -5,18 +5,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>MARCHO | page</title>
+
+  <link rel="icon" href="./images/favicons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-  @@include('_header.html')
-  <main>
-    @@include('_***************.html')
+  @@include('components/_header.html')
+
+  <main class="main">
+
+    <section class="top">
+      <div class="top__container" style="background-image: url(./images/decor/top-bg.jpg);">
+        <div class="container">
+          <h2 class="top__title title">page</h2>
+
+          <div class="bredcrumbs">
+            <ul class="bredcrumbs__list">
+
+              <li class="bredcrumbs__item">
+                <a class="bredcrumbs__link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="bredcrumbs__item">
+                <a class="bredcrumbs__link" href="#">
+                  page
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
   </main>
 
-  @@include('_footer.html')
+  @@include('components/_footer.html')
 
   <script src="js/main.min.js"></script>
 </body>

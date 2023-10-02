@@ -37,8 +37,9 @@ const path           = {
   },
   
   html: {
-    src:     pathSrc + "/html/main.html",
-    watch:   pathSrc + "/html/**/*.html"
+    // src:     pathSrc + "/html/main.html",
+    src:    [pathSrc + "/html/**/*.html", "!app/html/**/_*.html"],
+    watch:   pathSrc + "/html/**/*.html",
   },
 
   css: {
@@ -53,6 +54,8 @@ const path           = {
             "node_modules/slick-carousel/slick/slick.js",
             "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js",
             "node_modules/rateyo/src/jquery.rateyo.js",
+            "node_modules/ion-rangeslider/js/ion.rangeSlider.js",
+            "node_modules/jquery-form-styler/dist/jquery.formstyler.js",
             pathSrc + "/js/main.js"
     ],
     watch:  [pathSrc + "/js/**/*.js", "!app/js/main.min.js"],
@@ -71,7 +74,8 @@ const path           = {
   },
 
   build: [
-            "app/index.html",
+            // "app/index.html",
+            "app/*.html",
             "app/css/style.min.css",
             "app/js/main.min.js",
             "app/images/sprite.svg",
@@ -82,7 +86,7 @@ const path           = {
 
 //Наблюдение за файлами
 function watching() {
-  watch(path.html.watch, html).on('change', browserSync.reload);
+  watch(path.html.watch, series(html)).on('change', browserSync.reload);
   watch(path.css.watch, styles);
   watch(path.js.watch, scripts);
   watch(path.img.watch, series(cleanWebp, imagesApp, html));
@@ -111,7 +115,7 @@ function html() {
   .pipe(htmlmin({
     collapseWhitespace: true
   }))
-  .pipe(rename('index.html'))
+  // .pipe(rename('index.html'))
   .pipe(dest(pathSrc))
   .pipe(browserSync.stream());
 }
@@ -236,12 +240,17 @@ function cleanDist() {
   return del(pathDest)
 }
 
+//Очистка директории от лишних HTML
+function cleanHtml() {
+  return del("./app/*.html")
+}
+
 //Очистка директории images от webp
 function cleanWebp() {
   return del(path.img.webp)
 }
 
-//Очистка директории images от cleanSprite
+//Очистка директории images от Sprite
 function cleanSprite() {
   return del(path.img.sprite)
 }
@@ -254,6 +263,7 @@ function buildDist() {
 
 // exports.(имя для вызова таска) = (имя функции);
 exports.html        = html;
+exports.cleanHtml   = cleanHtml;
 exports.styles      = styles;
 exports.scripts     = scripts;
 exports.imagesApp   = imagesApp;
@@ -267,5 +277,5 @@ exports.cleanDist   = cleanDist;
 exports.cleanWebp   = cleanWebp;
 exports.buildDist   = buildDist;
 
-exports.build       = series(cleanDist, cleanWebp, imagesApp, buildDist, imagesDist);
+exports.build       = series(cleanDist, cleanHtml, html, cleanWebp, imagesApp, buildDist, imagesDist);
 exports.default     = series(html, styles, font, imagesApp, svgSprite, parallel(scripts, server, watching));
