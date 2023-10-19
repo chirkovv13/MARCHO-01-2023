@@ -23,7 +23,7 @@
   
   &__menu-link {
     padding: 4px 2px;
-    @extend %roboto-400;
+    @extend %roboto-700;
     color: $title;
     transition: color 0.5s, border 0.5s;
     &:hover {
