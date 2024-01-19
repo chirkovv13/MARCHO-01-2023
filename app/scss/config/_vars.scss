@@ -1,12 +1,12 @@
-$accent:           #fe3e57;
-$default-darker:   #909090;
-$default:          #8d8d8d;
+$accent: #fe3e57;
+$default-darker: #909090;
+$default: #8d8d8d;
 $default-lightest: #ccccce;
-$title:            #29282d;
-$white:            #ffffff;
-$bg:               #f6f6f6;
-$bg-dark:          #ececec;
-$btn-dark:         #292929;
+$title: #29282d;
+$white: #ffffff;
+$bg: #f6f6f6;
+$bg-dark: #ececec;
+$btn-dark: #292929;
 
 %quicksand-400 {
   font-family: 'Quicksand-Regular', sans-serif;
@@ -55,7 +55,8 @@ $btn-dark:         #292929;
   overflow: hidden;
 }
 
-%checkbox-hidden {
+%checkbox-hidden,
+%radio-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

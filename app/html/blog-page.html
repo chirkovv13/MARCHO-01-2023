@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARCHO | Blog</title>
+
+  <link rel="icon" href="./images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  @@include('components/_header.html')
+
+  <main class="main">
+
+    <section class="top">
+      <div class="top__container" style="background-image: url(./images/decor/top-bg.jpg);">
+        <div class="container">
+          <h2 class="top__title title">Blog standard</h2>
+
+          <div class="bredcrumbs">
+            <ul class="bredcrumbs__list">
+
+              <li class="bredcrumbs__item">
+                <a class="bredcrumbs__link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="bredcrumbs__item">
+                <a class="bredcrumbs__link" href="#">
+                  Blog page
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-page">
+      <div class="container">
+        <div class="blog-page__inner">
+
+          <div class="blog-page__content">
+            <div class="blog-page__item">
+              <a class="blog-page__item-img-link" href="#">
+                <span class="sr-only">open an article</span>
+                <img src="./images/content/blog/4.jpg" alt="blog img">
+              </a>
+              <div class="blog-page__item-box">
+                <h3 class="blog-page__item-subtitle subtitle">
+                  <a class="blog-page__item-subtitle-link" href="#">
+                    <span class="sr-only">open an article</span>
+                    Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to
+                    enjoy!
+                  </a>
+                </h3>
+                <div class="blog-page__item-info-box">
+                  <div class="blog-page__item-info">
+                    <a class="blog-page__item-author-link" href="#">
+                      <span class="sr-only">go to the author</span>
+                      <svg width="20px" height="20px">
+                        <use href="./images/sprite.svg#icon--user"></use>
+                      </svg>
+                      <span>By Admin</span>
+                    </a>
+                  </div>
+                  <div class="blog-page__item-date">
+                    <svg width="20px" height="20px">
+                      <use href="./images/sprite.svg#icon--clock"></use>
+                    </svg>
+                    <span>10 January, 2023</span>
+                  </div>
+                </div>
+                <div class="blog-page__item-text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas
+                    acchmsan lacus vel facilisis.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-page__item">
+              <a class="blog-page__item-img-link blog-page__item-img-link--video" data-fancybox href="https://www.youtube.com/watch?v=azJqeLcoB8o">
+                <span class="sr-only">open an article</span>
+                <img src="./images/content/blog/5.jpg" alt="blog img">
+              </a>
+              <div class="blog-page__item-box">
+                <h3 class="blog-page__item-subtitle subtitle">
+                  <a class="blog-page__item-subtitle-link" href="#">
+                    <span class="sr-only">open an article</span>
+                    Be prepared to sweat a lot, but at least in the Southern regions there’s a good chance you’ll get to
+                    enjoy!
+                  </a>
+                </h3>
+                <div class="blog-page__item-info-box">
+                  <div class="blog-page__item-info">
+                    <a class="blog-page__item-author-link" href="#">
+                      <span class="sr-only">go to the author</span>
+                      <svg width="20px" height="20px">
+                        <use href="./images/sprite.svg#icon--user"></use>
+                      </svg>
+                      <span>By Admin</span>
+                    </a>
+                  </div>
+                  <div class="blog-page__item-date">
+                    <svg width="20px" height="20px">
+                      <use href="./images/sprite.svg#icon--clock"></use>
+                    </svg>
+                    <span>10 January, 2023</span>
+                  </div>
+                </div>
+                <div class="blog-page__item-text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodoami viverra maycenas
+                    acchmsan lacus vel facilisis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-page__aside">
+            <ul class="filter__list">
+              <li class="filter__item">
+                <h3 class="filter__subtitle">Search</h3>
+                <form class="filter__search-form" action="#">
+                  <input class="filter__search-input" type="text" placeholder="Search your keyword....">
+                  <button class="filter__search-btn filter__btn" type="submit">
+                    <span class="sr-only">search</span>
+                    <svg width="15px" height="15px">
+                      <use href="./images/sprite.svg#icon--search"></use>
+                    </svg>
+                  </button>
+                </form>
+              </li>
+
+
+
+
+
+
+              <li class="filter__item">
+                <h3 class="filter__subtitle">Category</h3>
+                <form class="filter__category-form" action="#">
+                  <label class="filter__category-label">
+                    <input class="filter__category-input" type="checkbox">
+                    <div class="filter__category-checkbox">
+                      <span>Woman</span>
+                      <span>48</span>
+                    </div>
+                  </label>
+                  <label class="filter__category-label">
+                    <input class="filter__category-input" type="checkbox">
+                    <div class="filter__category-checkbox">
+                      <span>Man</span>
+                      <span>30</span>
+                    </div>
+                  </label>
+                  <label class="filter__category-label">
+                    <input class="filter__category-input" type="checkbox" checked>
+                    <div class="filter__category-checkbox">
+                      <span>Sale Products</span>
+                      <span>92</span>
+                    </div>
+                  </label>
+                  <label class="filter__category-label">
+                    <input class="filter__category-input" type="checkbox">
+                    <div class="filter__category-checkbox">
+                      <span>Fashion</span>
+                      <span>121</span>
+                    </div>
+                  </label>
+                  <label class="filter__category-label">
+                    <input class="filter__category-input" type="checkbox">
+                    <div class="filter__category-checkbox">
+                      <span>Hot Dresses</span>
+                      <span>52</span>
+                    </div>
+                  </label>
+                  <label class="filter__category-label">
+                    <input class="filter__category-input" type="checkbox">
+                    <div class="filter__category-checkbox">
+                      <span>Accessories</span>
+                      <span>88</span>
+                    </div>
+                  </label>
+                </form>
+              </li>
+
+              <li class="filter__item">
+                <h3 class="filter__subtitle">Popular Tags</h3>
+                <form class="filter__tags-form" action="#">
+                  <label class="filter__tags-label">
+                    <input class="filter__tags-input" type="checkbox">
+                    <span class="filter__tags-checkbox">Sweetshirt</span>
+                  </label>
+                  <label class="filter__tags-label">
+                    <input class="filter__tags-input" type="checkbox" checked>
+                    <span class="filter__tags-checkbox">Man Accessories</span>
+                  </label>
+                  <label class="filter__tags-label">
+                    <input class="filter__tags-input" type="checkbox">
+                    <span class="filter__tags-checkbox">Fashion</span>
+                  </label>
+                  <label class="filter__tags-label">
+                    <input class="filter__tags-input" type="checkbox">
+                    <span class="filter__tags-checkbox">Polo</span>
+                  </label>
+                  <label class="filter__tags-label">
+                    <input class="filter__tags-input" type="checkbox">
+                    <span class="filter__tags-checkbox">T-Shirt</span>
+                  </label>
+                  <label class="filter__tags-label">
+                    <input class="filter__tags-input" type="checkbox">
+                    <span class="filter__tags-checkbox">Jewellery</span>
+                  </label>
+                </form>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @@include('components/_footer.html')
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
