@@ -217,3 +217,22 @@ body {
     }
   }
 }
+
+.social {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    margin-right: 15px;
+  }
+
+  &__link {
+    height: 16px;
+    fill: $default;
+    transition: all 0.3s;
+
+    &:hover {
+      fill: $accent;
+    }
+  }
+}
