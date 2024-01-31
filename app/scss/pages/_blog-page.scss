@@ -21,6 +21,7 @@
 
     margin-bottom: 60px;
     border: 1px solid $bg-dark;
+    border-top: none;
     transition: border 0.3s,
     box-shadow 0.3s;
 
@@ -87,9 +88,8 @@
 
   &__item-img-link {
     position: relative;
-    display: block;
     max-width: 770px;
-    width: 100%;
+    height: 480px;
 
     img {
       display: block;
