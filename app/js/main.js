@@ -129,6 +129,23 @@ $(function () {
     infinite: false,
   });
 
+  // burger-menu btn
+  $('.header__menu-btn').on('click', function () {
+    $('.header__menu-list').toggleClass('header__menu-list--active');
+  });
+
+  // footer-menu list
+  $('.footer__top-subtitle--active').on('click', function () {
+    if (window.matchMedia('(max-width: 344px)').matches) {
+      $(this).next().slideToggle();
+    } else {
+      $('.footer__top-navigation').slideToggle()
+    }
+    // $('.footer__top-navigation').slideToggle()
+    // $(this).next().slideToggle();
+  });
+
+
 
 
 });

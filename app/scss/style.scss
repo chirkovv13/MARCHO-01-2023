@@ -5,16 +5,17 @@
 @import 'config/libs';
 
 @import 'components/header';
+@import 'components/footer';
+@import 'components/top';
+@import 'components/product-item';
+
 @import 'pages/index/top-slider';
 @import 'pages/index/categories';
 @import 'pages/index/video';
 @import 'pages/index/product';
-@import 'components/product-item';
 @import 'pages/index/promo';
 @import 'pages/index/blog';
-@import 'components/footer';
 
-@import 'components/top';
 @import 'pages/login+rigister';
 @import 'pages/page-404';
 @import 'pages/shop-page';
@@ -23,4 +24,8 @@
 @import 'pages/blog-one';
 @import 'pages/contact';
 
-@import 'layout/media';
+@import 'layout/media-1200px';
+@import 'layout/media-992px';
+@import 'layout/media-768px';
+@import 'layout/media-576px';
+@import 'layout/media-440px';

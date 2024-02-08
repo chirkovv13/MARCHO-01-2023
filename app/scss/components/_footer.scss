@@ -9,6 +9,7 @@
   &__top-list {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
   }
 
   &__top-logo {
@@ -54,6 +55,7 @@
 
   &__top-subtitle {
     margin-bottom: 36px;
+    pointer-events: none;
   }
 
   &__top-text {
@@ -64,6 +66,7 @@
   &__top-form {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
   }
 
   &__top-label {
@@ -94,6 +97,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     padding: 30px 0;
     font-size: 12px;
   }
@@ -117,7 +121,7 @@
 
   &__bottom-pay-img {
     display: block;
-    max-width: 70px;
+    max-width: 75px;
     width: 100%;
     height: 20px;
     object-fit: cover;
