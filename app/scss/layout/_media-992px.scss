@@ -15,9 +15,12 @@
 
   .btn {}
 
-  .subtitle {}
+  .subtitle {
+    font-size: 20px;
+  }
 
-  .title {}
+  .title {
+  }
 
   .title-text {}
 
@@ -123,6 +126,7 @@
   // index-style
 
   .top-slider {
+    background-size: 0%;
 
     &__container {}
 
@@ -132,26 +136,48 @@
 
     &__inner {}
 
-    &__content {}
+    &__content {
+      padding: 40px 0;
+    }
 
-    &__title {}
+    &__title {
+      // max-width: 400px;
+    }
 
     &__text {}
 
     &__button {}
 
-    &__img {}
+    &__img {
+      max-height: 460px;
+      max-width: 400px;
+    }
   }
 
   .categories {
+    padding: 80px 0;
 
     &__title {}
 
-    &__text {}
+    &__text {
+      margin-bottom: 40px;
+    }
 
-    &__list {}
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "one two"
+        "three four";
+    }
 
-    &__item {}
+    &__item {
+      background-position: top right;
+
+      &:nth-child(2) {
+        padding: 40px;
+      }
+    }
 
     &__descr {}
 
@@ -161,12 +187,23 @@
   }
 
   .info {
+    flex-wrap: wrap;
+    margin-bottom: 80px;
 
-    &__item {}
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+      padding: 20px;
+    }
 
-    &__subtitle {}
+    &__subtitle {
+      padding: 15px;
+    }
 
-    &__text {}
+    &__text {
+      width: 100%;
+    }
   }
 
   .video {
