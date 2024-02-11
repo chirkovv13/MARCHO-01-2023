@@ -107,6 +107,41 @@
     &__bottom-pay-img {}
   }
 
+  .product-item {
+
+    &__box {}
+
+    &__img {}
+
+    &__link-box {}
+
+    &__link {}
+
+    &__content-wrapper {}
+
+    &__content-inner {}
+
+    &__star {}
+
+    &__title {}
+
+    &__price {}
+
+    &__price-new {}
+
+    &__price-old {}
+
+    &__content-box {}
+
+    &__content-text {}
+
+    &__content-btn {}
+  }
+
+  .product-item--sale {}
+
+  .star {}
+
   // index-style
 
   .top-slider {
@@ -203,41 +238,6 @@
 
     &__link {}
   }
-
-  .product-item {
-
-    &__box {}
-
-    &__img {}
-
-    &__link-box {}
-
-    &__link {}
-
-    &__content-wrapper {}
-
-    &__content-inner {}
-
-    &__star {}
-
-    &__title {}
-
-    &__price {}
-
-    &__price-new {}
-
-    &__price-old {}
-
-    &__content-box {}
-
-    &__content-text {}
-
-    &__content-btn {}
-  }
-
-  .product-item--sale {}
-
-  .star {}
 
   .promo {
 

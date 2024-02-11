@@ -124,6 +124,49 @@
     &__bottom-pay-img {}
   }
 
+  .product-item {
+
+    &__box {
+      margin-bottom: 15px;
+    }
+
+    &__img {
+      min-width: 100%;
+      height: 300px;
+    }
+
+    &__link-box {
+    }
+
+    &__link {}
+
+    &__content-wrapper {}
+
+    &__content-inner {}
+
+    &__star {}
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__price {}
+
+    &__price-new {}
+
+    &__price-old {}
+
+    &__content-box {}
+
+    &__content-text {}
+
+    &__content-btn {}
+  }
+
+  .product-item--sale {}
+
+  .star {}
+
   // index-style
 
   .top-slider {
@@ -142,9 +185,8 @@
     }
 
     &__title {
-      // max-width: 400px;
     }
-
+    
     &__text {}
 
     &__button {}
@@ -244,12 +286,15 @@
   }
 
   .product {
+    padding: 80px 0;
 
     &__inner {}
 
     &__title {}
 
-    &__text {}
+    &__text {
+      margin-bottom: 40px;
+    }
 
     &__list {}
 
@@ -257,41 +302,6 @@
 
     &__link {}
   }
-
-  .product-item {
-
-    &__box {}
-
-    &__img {}
-
-    &__link-box {}
-
-    &__link {}
-
-    &__content-wrapper {}
-
-    &__content-inner {}
-
-    &__star {}
-
-    &__title {}
-
-    &__price {}
-
-    &__price-new {}
-
-    &__price-old {}
-
-    &__content-box {}
-
-    &__content-text {}
-
-    &__content-btn {}
-  }
-
-  .product-item--sale {}
-
-  .star {}
 
   .promo {
 
