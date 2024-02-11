@@ -56,7 +56,9 @@
 
   .footer {
 
-    &__top {}
+    &__top {
+      padding-top: 60px;
+    }
 
     &__top-list {}
 
@@ -164,6 +166,7 @@
   }
 
   .categories {
+    padding: 60px 0;
 
     &__title {}
 
@@ -190,6 +193,7 @@
   }
 
   .info {
+    margin-bottom: 60px;
     gap: 20px;
 
     &__item {
@@ -208,16 +212,23 @@
   }
 
   .video {
+    padding: 60px 0;
 
     &__inner {}
 
-    &__popup {}
+    &__popup {
+      height: 250px;
+    }
 
     &__play {}
 
-    &__img {}
+    &__img {
+      height: 100px;
+    }
 
-    &__content {}
+    &__content {
+      padding: 20px 0;
+    }
 
     &__descr {}
 

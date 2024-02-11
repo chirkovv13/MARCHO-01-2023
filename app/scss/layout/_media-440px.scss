@@ -178,11 +178,15 @@
 
     &__inner {}
 
-    &__popup {}
+    &__popup {
+      height: 200px;
+    }
 
     &__play {}
 
-    &__img {}
+    &__img {
+      height: 80px;
+    }
 
     &__content {}
 
