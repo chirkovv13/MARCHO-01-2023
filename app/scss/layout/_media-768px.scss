@@ -353,16 +353,30 @@
 
   .time {
 
-    &__items {}
+    &__items {
+      justify-content: space-evenly;
+    }
 
-    &__item {}
+    &__item {
+      width: 100px;
+      height: 100px;
+
+      & span {
+        font-size: 32px;
+      }
+    }
   }
 
   .partners {
 
-    &__list {}
+    &__list {
+      justify-content: center;
+      height: 100%;
+    }
 
-    &__item {}
+    &__item {
+      margin: 10px;
+    }
 
     &__img {}
   }

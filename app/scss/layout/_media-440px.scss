@@ -125,8 +125,7 @@
 
     &__box {}
 
-    &__img {
-    }
+    &__img {}
 
     &__link-box {}
 
@@ -154,6 +153,7 @@
   }
 
   .product-item--sale {}
+
   .star {}
 
   // index-style
@@ -272,7 +272,15 @@
 
   .time {
 
-    &__items {}
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+      grid-gap: 20px;
+      max-width: 220px;
+      margin: 0 auto;
+    }
 
     &__item {}
   }
@@ -281,7 +289,9 @@
 
     &__list {}
 
-    &__item {}
+    &__item {
+      max-width: 75px;
+    }
 
     &__img {}
   }
