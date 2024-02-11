@@ -17,8 +17,15 @@
 
   .product-item {
 
+    // &--hover {
+    //   .product-item__link-box {
+    //     display: flex;
+    //   }
+    // }
+
     &--hover {
       .product-item__link-box {
+        opacity: 1;
         display: flex;
       }
     }
@@ -33,7 +40,7 @@
   .top-slider {
 
     &__item {
-      padding: 0 0 0 15px;
+      padding: 0 20px;
     }
 
     &__content {

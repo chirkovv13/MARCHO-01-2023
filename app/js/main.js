@@ -146,6 +146,7 @@ $(function () {
   // product-item "link-box" for a tablet
   $('.product-item').on('click', function () {
     if (window.matchMedia('(max-width: 1201px)').matches) {
+      $('.product-item').removeClass('product-item--hover');
       $(this).toggleClass('product-item--hover');
     } else {}
   });
