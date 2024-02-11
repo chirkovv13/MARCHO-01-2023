@@ -1,114 +1,18 @@
 @media (max-width: 1200px) {
 
   // global-style
-  .logo {
-
-    &__img {}
-  }
-
-  .container {}
-
-  .sr-only {}
-
-  .main {}
-
-  .btn {}
-
-  .subtitle {}
 
   .title {
     font-size: 42px;
   }
 
-  .title-text {}
-
-  .descr {}
-
-  .text {}
-
-  .btn-dark {}
-
-  .light-btn {}
-
   // components-style
 
-  .header {
-
-    &__inner {}
-
-    &__menu {}
-
-    &__menu-list {}
-
-    &__menu-item {}
-
-    &__menu-link {}
-
-    &__menu-link--active {}
-  }
-
-  .user-nav {
-
-    &__item {}
-
-    &__item-link {}
-
-    &__num {}
-  }
-
   .footer {
-
-    &__top {}
-
-    &__top-list {}
-
-    &__top-items {}
-
-    &__top-logo {}
-
-    &__top-contact {}
-
-    &__top-item {}
-
-    &__top-link {}
-
-    &__top-social-icons {}
-
-    &__top-social-icon {}
-
-    &__top-social-link {}
-
-    &__top-subtitle {}
-
-    &__top-navigation {}
-
-    &__top-nav {}
-
-    &__top-user {}
 
     &__top-text {
       max-width: 400px;
     }
-
-    &__top-form {}
-
-    &__top-label {}
-
-    &__top-input {}
-
-    &__top-btn {}
-
-    &__bottom {}
-
-    &__bottom-copy {}
-
-    &__bottom-pay {}
-
-    &__bottom-pay-items {}
-
-    &__bottom-pay-item {}
-
-    &__bottom-pay-img {}
   }
 
   .product-item {
@@ -116,60 +20,21 @@
     &--hover {
       .product-item__link-box {
         display: flex;
-
-        &:hover {}
       }
-
     }
-
-    &__box {}
-
-    &__img {}
 
     &__link-box {
       display: none;
     }
-
-    &__link {}
-
-    &__content-wrapper {}
-
-    &__content-inner {}
-
-    &__star {}
-
-    &__title {}
-
-    &__price {}
-
-    &__price-new {}
-
-    &__price-old {}
-
-    &__content-box {}
-
-    &__content-text {}
-
-    &__content-btn {}
   }
-
-  .product-item--sale {}
-
-  .star {}
 
   // index-style
 
   .top-slider {
 
-    &__container {}
-
-    &__list {}
-
     &__item {
       padding: 0 0 0 15px;
     }
-
-    &__inner {}
 
     &__content {
       padding: 80px 0;
@@ -181,10 +46,6 @@
       font-size: 46px;
     }
 
-    &__text {}
-
-    &__button {}
-
     &__img {
       max-width: 470px;
       height: 560px;
@@ -194,21 +55,9 @@
 
   .categories {
 
-    &__title {}
-
-    &__text {}
-
-    &__list {}
-
     &__item:first-child {
       background-position: top left;
     }
-
-    &__descr {}
-
-    &__subtitle {}
-
-    &__link {}
   }
 
   .info {
@@ -216,116 +65,42 @@
     &__item {
       padding: 50px 35px;
     }
-
-    &__subtitle {}
-
-    &__text {}
-  }
-
-  .video {
-
-    &__inner {}
-
-    &__popup {}
-
-    &__play {}
-
-    &__img {}
-
-    &__content {}
-
-    &__descr {}
-
-    &__title {}
-
-    &__text {}
-
-    &__link {}
   }
 
   .product {
-
-    &__inner {}
-
-    &__title {}
-
-    &__text {}
 
     &__list {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
 
     }
-
-    &__item {}
-
-    &__link {}
   }
 
   .promo {
     padding: 120px 0;
-
-    &__inner {}
-
-    &__descr {}
-
-    &__title {}
-
-    &__time {}
-
-    &__days {}
-
-    &__text {}
-
-    &__hours {}
-
-    &__minutes {}
-
-    &__seconds {}
-
-    &__link {}
-  }
-
-  .time {
-
-    &__items {}
-
-    &__item {}
-  }
-
-  .partners {
-
-    &__list {}
-
-    &__item {}
-
-    &__img {}
   }
 
   .blog {
+    padding: 120px 0;
 
-    &__title {}
+    &__list {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-    &__text {}
+    &__img-link {
+      & img {
+        max-width: 100%;
+      }
+    }
 
-    &__list {}
+    &__content {
+      padding: 20px;
+    }
 
-    &__item {}
-
-    &__img-link {}
-
-    &__content {}
-
-    &__info {}
-
-    &__author-link {}
-
-    &__date {}
-
-    &__subtitle {}
-
-    &__title-link {}
-
-    &__more-link {}
+    &__info {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 }

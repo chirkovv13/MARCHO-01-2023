@@ -3,69 +3,26 @@
   // global-style
   .logo {
     max-width: 140px;
-
-    &__img {}
   }
-
-  .container {}
-
-  .sr-only {}
-
-  .main {}
-
-  .btn {}
 
   .subtitle {
     font-size: 20px;
   }
 
-  .title {}
-
-  .title-text {}
-
   .descr {
     font-size: 20px;
   }
-
-  .text {}
-
-  .btn-dark {}
-
-  .light-btn {}
 
   // components-style
 
   .header {
 
-    &__inner {}
-
-    &__menu {}
-
-    &__menu-list {}
-
-    &__menu-item {}
-
     &__menu-item:not(:last-child) {
       margin-right: 24px;
     }
-
-    &__menu-link {}
-
-    &__menu-link--active {}
-  }
-
-  .user-nav {
-
-    &__item {}
-
-    &__item-link {}
-
-    &__num {}
   }
 
   .footer {
-
-    &__top {}
 
     &__top-list {
       justify-content: start;
@@ -73,55 +30,13 @@
       gap: 50px 30px;
     }
 
-    &__top-items {}
-
-    &__top-logo {}
-
-    &__top-contact {}
-
-    &__top-item {}
-
-    &__top-link {}
-
-    &__top-social-icons {}
-
-    &__top-social-icon {}
-
-    &__top-social-link {}
-
-    &__top-subtitle {}
-
-    &__top-navigation {}
-
-    &__top-nav {}
-
-    &__top-user {}
-
     &__top-text {
       max-width: 700px;
     }
 
-    &__top-form {}
-
     &__top-label {
       max-width: 700px;
     }
-
-    &__top-input {}
-
-    &__top-btn {}
-
-    &__bottom {}
-
-    &__bottom-copy {}
-
-    &__bottom-pay {}
-
-    &__bottom-pay-items {}
-
-    &__bottom-pay-item {}
-
-    &__bottom-pay-img {}
   }
 
   .product-item {
@@ -135,59 +50,19 @@
       height: 300px;
     }
 
-    &__link-box {}
-
-    &__link {}
-
-    &__content-wrapper {}
-
-    &__content-inner {}
-
-    &__star {}
-
     &__title {
       font-size: 20px;
     }
-
-    &__price {}
-
-    &__price-new {}
-
-    &__price-old {}
-
-    &__content-box {}
-
-    &__content-text {}
-
-    &__content-btn {}
   }
-
-  .product-item--sale {}
-
-  .star {}
 
   // index-style
 
   .top-slider {
     background-size: 0%;
 
-    &__container {}
-
-    &__list {}
-
-    &__item {}
-
-    &__inner {}
-
     &__content {
       padding: 40px 0;
     }
-
-    &__title {}
-
-    &__text {}
-
-    &__button {}
 
     &__img {
       max-height: 460px;
@@ -197,8 +72,6 @@
 
   .categories {
     padding: 80px 0;
-
-    &__title {}
 
     &__text {
       margin-bottom: 40px;
@@ -219,12 +92,6 @@
         padding: 40px;
       }
     }
-
-    &__descr {}
-
-    &__subtitle {}
-
-    &__link {}
   }
 
   .info {
@@ -260,16 +127,10 @@
       background-position: top center;
     }
 
-    &__play {}
-
-    &__img {}
-
     &__content {
       align-items: center;
       text-align: center;
     }
-
-    &__descr {}
 
     &__title {
       margin-bottom: 20px;
@@ -279,51 +140,23 @@
     &__text {
       margin-bottom: 30px;
     }
-
-    &__link {}
   }
 
   .product {
     padding: 80px 0;
 
-    &__inner {}
-
-    &__title {}
-
     &__text {
       margin-bottom: 40px;
     }
-
-    &__list {}
-
-    &__item {}
-
-    &__link {}
   }
 
   .promo {
     margin-bottom: 80px;
     padding: 80px 0;
 
-    &__inner {}
-
-    &__descr {}
-
     &__title {
       margin-bottom: 40px;
     }
-
-    &__time {}
-
-    &__days {}
-
-    &__text {}
-
-    &__hours {}
-
-    &__minutes {}
-
-    &__seconds {}
 
     &__link {
       font-family: 'Roboto-Regular', sans-serif;
@@ -337,8 +170,6 @@
 
   .time {
 
-    &__items {}
-
     &__item {
       & span {
         font-size: 40px;
@@ -351,40 +182,17 @@
     &__list {
       flex-wrap: wrap;
     }
-
-    &__item {}
-
-    // &__item:not(:last-child) {
-    //   margin-right: 20px;
-    // }
-
-    &__img {}
   }
 
   .blog {
+    padding: 80px 0;
 
-    &__title {}
+    &__text {
+      margin-bottom: 30px;
+    }
 
-    &__text {}
-
-    &__list {}
-
-    &__item {}
-
-    &__img-link {}
-
-    &__content {}
-
-    &__info {}
-
-    &__author-link {}
-
-    &__date {}
-
-    &__subtitle {}
-
-    &__title-link {}
-
-    &__more-link {}
+    &__list::after {
+      display: none;
+    }
   }
 }

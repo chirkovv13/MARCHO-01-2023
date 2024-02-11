@@ -1,68 +1,14 @@
 @media (max-width: 576px) {
 
   // global-style
-  .logo {
-
-    &__img {}
-  }
-
-  .container {}
-
-  .sr-only {}
-
-  .main {}
-
-  .btn {}
-
-  .subtitle {}
-
-  .title {}
-
-  .title-text {}
-
-  .descr {}
-
-  .text {}
-
-  .btn-dark {}
-
-  .light-btn {}
 
   // components-style
-
-  .header {
-
-    &__inner {}
-
-    &__menu {}
-
-    &__menu-list {}
-
-    &__menu-item {}
-
-    &__menu-link {}
-
-    &__menu-link--active {}
-  }
-
-  .user-nav {
-
-    &__item {}
-
-    &__item-link {}
-
-    &__num {}
-  }
 
   .footer {
 
     &__top {
       padding-top: 60px;
     }
-
-    &__top-list {}
-
-    &__top-items {}
 
     &__top-items:first-child {
       width: 100%;
@@ -77,16 +23,6 @@
       margin-bottom: 20px;
     }
 
-    &__top-item {}
-
-    &__top-link {}
-
-    &__top-social-icons {}
-
-    &__top-social-icon {}
-
-    &__top-social-link {}
-
     &__top-subtitle--active {
       width: 145px;
     }
@@ -100,73 +36,19 @@
       display: none;
     }
 
-    &__top-nav {}
-
-    &__top-user {}
-
-    &__top-text {}
-
-    &__top-form {}
-
-    &__top-label {}
-
-    &__top-input {}
-
-    &__top-btn {}
-
     &__bottom {
       flex-direction: column;
     }
-
-    &__bottom-copy {}
-
-    &__bottom-pay {}
-
-    &__bottom-pay-items {}
-
-    &__bottom-pay-item {}
-
-    &__bottom-pay-img {}
   }
 
   .product-item {
     width: 100%;
     max-width: 100%;
 
-    &__box {}
-
     &__img {
       height: 230px;
     }
-
-    &__link-box {}
-
-    &__link {}
-
-    &__content-wrapper {}
-
-    &__content-inner {}
-
-    &__star {}
-
-    &__title {}
-
-    &__price {}
-
-    &__price-new {}
-
-    &__price-old {}
-
-    &__content-box {}
-
-    &__content-text {}
-
-    &__content-btn {}
   }
-
-  .product-item--sale {}
-
-  .star {}
 
   // index-style
 
@@ -177,26 +59,14 @@
       margin-top: -65px;
     }
 
-    &__container {}
-
-    &__list {}
-
-    &__item {}
-
     &__inner {
       display: block;
     }
-
-    &__content {}
 
     &__title {
       margin-bottom: 20px;
       line-height: 1.2;
     }
-
-    &__text {}
-
-    &__button {}
 
     &__img,
     .slick-slide img {
@@ -206,12 +76,6 @@
 
   .categories {
     padding: 60px 0;
-
-    &__title {}
-
-    &__text {}
-
-    &__list {}
 
     &__item {
       width: 100%;
@@ -223,12 +87,6 @@
         background-position: top right !important;
       }
     }
-
-    &__descr {}
-
-    &__subtitle {}
-
-    &__link {}
   }
 
   .info {
@@ -253,13 +111,9 @@
   .video {
     padding: 60px 0;
 
-    &__inner {}
-
     &__popup {
       height: 250px;
     }
-
-    &__play {}
 
     &__img {
       height: 100px;
@@ -268,24 +122,10 @@
     &__content {
       padding: 20px 0;
     }
-
-    &__descr {}
-
-    &__title {}
-
-    &__text {}
-
-    &__link {}
   }
 
   .product {
     padding: 60px 0;
-
-    &__inner {}
-
-    &__title {}
-
-    &__text {}
 
     &__list {
       display: flex;
@@ -293,10 +133,6 @@
       justify-content: center;
       gap: 20px;
     }
-
-    &__item {}
-
-    &__link {}
   }
 
   .promo {
@@ -304,32 +140,10 @@
     background-color: $bg;
     margin-bottom: 60px;
     padding: 60px 0;
-
-    &__inner {}
-
-    &__descr {}
-
-    &__title {}
-
-    &__time {}
-
-    &__days {}
-
-    &__text {}
-
-    &__hours {}
-
-    &__minutes {}
-
-    &__seconds {}
-
-    &__link {}
   }
 
   .time {
     margin-bottom: 30px;
-
-    &__items {}
 
     &__item {
       width: 80px;
@@ -338,39 +152,13 @@
     }
   }
 
-  .partners {
-
-    &__list {}
-
-    &__item {}
-
-    &__img {}
-  }
-
   .blog {
+    padding: 60px 0;
 
-    &__title {}
-
-    &__text {}
-
-    &__list {}
-
-    &__item {}
-
-    &__img-link {}
-
-    &__content {}
-
-    &__info {}
-
-    &__author-link {}
-
-    &__date {}
-
-    &__subtitle {}
-
-    &__title-link {}
-
-    &__more-link {}
+    &__img-link {
+      & img {
+        height: 200px;
+      }
+    }
   }
 }
