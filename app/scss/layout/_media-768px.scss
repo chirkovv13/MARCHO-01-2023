@@ -289,6 +289,111 @@
     &__aside {}
   }
 
+  .blog-one {
+
+    &__inner {}
+
+    &__content {}
+
+    &__img {
+      height: 280px;
+    }
+
+    &__box {
+
+      & .blog-one__img-left,
+      .blog-one__img-right {
+        max-width: 100%;
+        float: none;
+        margin: 0 0 10px 0;
+      }
+    }
+
+    &__info-list {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    &__item {}
+
+    &__item-link {}
+
+    &__img-left {}
+
+    &__author {}
+
+    &__author-info {}
+
+    &__author-tags {}
+
+    &__author-link {}
+
+    &__author-share {}
+
+    &__author-social {}
+
+    &__author-content {}
+
+    &__author-img {}
+
+    &__author-box {}
+
+    &__author-name {}
+
+    &__author-descr {}
+
+    &__comments {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .comments {
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__img-box {}
+
+    &__img {}
+
+    &__content {}
+
+    &__content-top {}
+
+    &__content-name {}
+
+    &__content-date {}
+
+    &__content-text {}
+
+    &__content-link {}
+
+    &__form {}
+
+    &__rating-subtitle {}
+
+    &__form-input-box {
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    &__form-name {}
+
+    &__form-email {}
+
+    &__form-textarea {}
+
+    &__form-btn {}
+  }
+
   .filter {
 
     &__list {}

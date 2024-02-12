@@ -27,7 +27,7 @@
     &__top-list {
       justify-content: start;
       flex-wrap: wrap;
-      gap: 50px 30px;
+      gap: 30px 50px;
     }
 
     &__top-text {
@@ -313,12 +313,116 @@
     &__aside {}
   }
 
+  .blog-one {
+
+    &__inner {}
+
+    &__content {}
+
+    &__img {}
+
+    &__box {
+      padding: 15px;
+
+      & h4 {
+        font-size: 20px;
+      }
+
+      & blockquote {
+        padding: 15px;
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+
+      & p {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__info-list {}
+
+    &__item {}
+
+    &__item-link {}
+
+    &__img-left {}
+
+    &__author {}
+
+    &__author-info {}
+
+    &__author-tags {}
+
+    &__author-link {}
+
+    &__author-share {}
+
+    &__author-social {}
+
+    &__author-content {}
+
+    &__author-img {}
+
+    &__author-box {}
+
+    &__author-name {}
+
+    &__author-descr {}
+
+    &__comments {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .comments {
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__img-box {}
+
+    &__img {}
+
+    &__content {}
+
+    &__content-top {}
+
+    &__content-name {}
+
+    &__content-date {}
+
+    &__content-text {}
+
+    &__content-link {}
+
+    &__form {}
+
+    &__rating-subtitle {}
+
+    &__form-input-box {}
+
+    &__form-name {}
+
+    &__form-email {}
+
+    &__form-textarea {}
+
+    &__form-btn {}
+  }
+
   .filter {
 
     &__list {}
 
     &__item {
-      margin-bottom: 4%;
       padding: 20px;
     }
 
