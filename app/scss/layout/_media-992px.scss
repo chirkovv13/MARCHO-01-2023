@@ -252,21 +252,142 @@
 
     &__link {}
   }
+
   .page-404 {
     padding: 80px 0;
-  
+
     &__inner {}
-  
+
     &__content {}
-  
+
     &__tittle {}
-  
+
     &__text {
       margin-bottom: 30px;
     }
-  
+
     &__btn {}
-  
+
     &__img {}
+  }
+
+  .blog-page {
+    padding: 80px 0;
+
+    &__inner {}
+
+    &__content {}
+
+    &__item {
+      margin-bottom: 30px;
+    }
+
+    &__item-img-link {}
+
+    &__item-box {}
+
+    &__item-subtitle {}
+
+    &__item-subtitle-link {}
+
+    &__item-info-box {}
+
+    &__item-info {}
+
+    &__item-author-link {}
+
+    &__item-date {}
+
+    &__item-text {}
+
+    &__item-img-link--video {}
+
+    &__item--slider {}
+
+    &__slider {}
+
+    &__item-img {}
+
+    &__item--no-image {}
+
+    &__aside {}
+  }
+
+  .filter {
+
+    &__list {}
+
+    &__item {
+      margin-bottom: 4%;
+      padding: 20px;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    &__search-form {}
+
+    &__search-input {}
+
+    &__search-btn {}
+
+    &__btn {}
+
+    &__category-form {}
+
+    &__category-label {}
+
+    &__category-input {}
+
+    &__category-checkbox {}
+
+    &__tags-form {}
+
+    &__tags-label {}
+
+    &__tags-input {}
+
+    &__tags-checkbox {}
+  }
+
+  .person {
+
+    &__img {}
+
+    &__name {}
+
+    &__post {}
+
+    &__text {}
+
+    &__social {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .latest-post {
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+
+    &__img {}
+
+    &__box {}
+
+    &__title {}
+
+    &__date {}
   }
 }

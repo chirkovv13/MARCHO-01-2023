@@ -237,4 +237,127 @@
     }
   }
 
+  .blog-page {
+
+    &__inner {}
+
+    &__content {}
+
+    &__item {}
+
+    &__item-img-link {
+      img {
+        height: 300px;
+      }
+    }
+
+    &__item-box {}
+
+    &__item-subtitle {}
+
+    &__item-subtitle-link {}
+
+    &__item-info-box {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    &__item-info {}
+
+    &__item-author-link {}
+
+    &__item-date {}
+
+    &__item-text {}
+
+    &__item-img-link--video {}
+
+    &__item--slider {}
+
+    &__slider {
+      height: 300px;
+    }
+
+    &__item-img {
+      height: 300px;
+      object-fit: cover;
+    }
+
+    &__item--no-image {}
+
+    &__aside {}
+  }
+
+  .filter {
+
+    &__list {}
+
+    &__item {}
+
+    &__subtitle {}
+
+    &__search-form {}
+
+    &__search-input {}
+
+    &__search-btn {}
+
+    &__btn {}
+
+    &__category-form {}
+
+    &__category-label {}
+
+    &__category-input {}
+
+    &__category-checkbox {}
+
+    &__tags-form {}
+
+    &__tags-label {}
+
+    &__tags-input {}
+
+    &__tags-checkbox {}
+  }
+
+  .person {
+
+    &__img {}
+
+    &__name {}
+
+    &__post {}
+
+    &__text {}
+
+    &__social {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .latest-post {
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+
+    &__img {}
+
+    &__box {}
+
+    &__title {}
+
+    &__date {}
+  }
 }
