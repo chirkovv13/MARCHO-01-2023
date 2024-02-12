@@ -219,4 +219,22 @@
 
     &__link {}
   }
+
+  .page-404 {
+
+    &__inner {}
+
+    &__content {}
+
+    &__tittle {}
+
+    &__text {}
+
+    &__btn {}
+
+    &__img {
+      max-height: 200px;
+    }
+  }
+
 }
