@@ -50,6 +50,30 @@
     }
   }
 
+  .top {
+
+    &__container {
+      background-position-x: 75%;
+      padding: 60px 0;
+    }
+
+    &__title {
+      padding-left: 30px;
+      text-align: left;
+    }
+  }
+
+  .bredcrumbs {
+    justify-content: start;
+    padding-left: 30px;
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+  }
+
   // index-style
 
   .top-slider {
@@ -160,5 +184,39 @@
         height: 200px;
       }
     }
+  }
+
+  .modal {
+    padding-top: 60px;
+    margin-bottom: 60px;
+
+    &__links {}
+
+    &__link {}
+
+    &__link--active {}
+
+    &__form {}
+  }
+
+  .modal-form {
+
+    &__label {
+      margin-bottom: 10px;
+    }
+
+    &__input {}
+
+    &__text {
+      margin-bottom: 10px;
+    }
+
+    &__checkbox {}
+
+    &__check {}
+
+    &__btn {}
+
+    &__link {}
   }
 }

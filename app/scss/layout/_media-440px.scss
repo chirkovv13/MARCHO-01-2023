@@ -37,6 +37,25 @@
     }
   }
 
+  .top {
+
+    &__container {}
+
+    &__title {
+      padding-left: 0;
+    }
+  }
+
+  .bredcrumbs {
+    padding-left: 0;
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+  }
+
   // index-style
 
   .top-slider {
@@ -63,8 +82,8 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      justify-items: center;
-      grid-gap: 20px;
+      justify-self: center;
+      gap: 20px;
       max-width: 220px;
       margin: 0 auto;
     }
@@ -75,5 +94,33 @@
     &__item {
       max-width: 75px;
     }
+  }
+
+  .modal {
+
+    &__links {}
+
+    &__link {}
+
+    &__link--active {}
+
+    &__form {}
+  }
+
+  .modal-form {
+
+    &__label {}
+
+    &__input {}
+
+    &__text {}
+
+    &__checkbox {}
+
+    &__check {}
+
+    &__btn {}
+
+    &__link {}
   }
 }

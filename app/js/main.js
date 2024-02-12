@@ -132,6 +132,9 @@ $(function () {
   // burger-menu btn for a tablet
   $('.header__menu-btn').on('click', function () {
     $('.header__menu-list').toggleClass('header__menu-list--active');
+    $('.main').on('click', function () {
+      $('.header__menu-list').removeClass('header__menu-list--active')
+    });
   });
 
   // footer-menu list for a tablet

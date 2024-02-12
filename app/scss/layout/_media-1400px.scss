@@ -4,6 +4,22 @@
 
   // components-style
 
+  .top {
+
+    &__container {}
+
+    &__title {}
+  }
+
+  .bredcrumbs {
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+  }
+
   // index-style
 
   .top-slider {
@@ -39,5 +55,33 @@
     &__list::after {
       right: 5px;
     }
+  }
+
+  .modal {
+
+    &__links {}
+
+    &__link {}
+
+    &__link--active {}
+
+    &__form {}
+  }
+
+  .modal-form {
+
+    &__label {}
+
+    &__input {}
+
+    &__text {}
+
+    &__checkbox {}
+
+    &__check {}
+
+    &__btn {}
+
+    &__link {}
   }
 }

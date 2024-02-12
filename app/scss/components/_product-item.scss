@@ -143,9 +143,9 @@
     }
   }
 
-  // &:hover .product-item__link-box {
-  //   opacity: 1;
-  // }
+  &:hover .product-item__link-box {
+    opacity: 1;
+  }
 
   &__box {
     position: relative;

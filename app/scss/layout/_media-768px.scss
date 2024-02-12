@@ -83,6 +83,25 @@
     }
   }
 
+  .top {
+
+    &__container {
+      background-position-x: 34%;
+      background-size: cover;
+    }
+
+    &__title {}
+  }
+
+  .bredcrumbs {
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+  }
+
   // index-style
 
   .top-slider {
@@ -151,10 +170,6 @@
 
   .time {
 
-    &__items {
-      justify-content: space-evenly;
-    }
-
     &__item {
       width: 100px;
       height: 100px;
@@ -175,5 +190,33 @@
     &__item {
       margin: 10px;
     }
+  }
+
+  .modal {
+
+    &__links {}
+
+    &__link {}
+
+    &__link--active {}
+
+    &__form {}
+  }
+
+  .modal-form {
+
+    &__label {}
+
+    &__input {}
+
+    &__text {}
+
+    &__checkbox {}
+
+    &__check {}
+
+    &__btn {}
+
+    &__link {}
   }
 }

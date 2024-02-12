@@ -17,12 +17,6 @@
 
   .product-item {
 
-    // &--hover {
-    //   .product-item__link-box {
-    //     display: flex;
-    //   }
-    // }
-
     &--hover {
       .product-item__link-box {
         opacity: 1;
@@ -33,6 +27,25 @@
     &__link-box {
       display: none;
     }
+  }
+
+  .top {
+
+    &__container {
+      padding: 120px 0;
+      background-size: 130%;
+    }
+
+    &__title {}
+  }
+
+  .bredcrumbs {
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
   }
 
   // index-style
@@ -109,5 +122,33 @@
       flex-direction: column;
       gap: 10px;
     }
+  }
+
+  .modal {
+
+    &__links {}
+
+    &__link {}
+
+    &__link--active {}
+
+    &__form {}
+  }
+
+  .modal-form {
+
+    &__label {}
+
+    &__input {}
+
+    &__text {}
+
+    &__checkbox {}
+
+    &__check {}
+
+    &__btn {}
+
+    &__link {}
   }
 }

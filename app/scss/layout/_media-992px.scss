@@ -55,6 +55,24 @@
     }
   }
 
+  .top {
+
+    &__container {
+      padding: 80px 0;
+    }
+
+    &__title {}
+  }
+
+  .bredcrumbs {
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+  }
+
   // index-style
 
   .top-slider {
@@ -194,5 +212,44 @@
     &__list::after {
       display: none;
     }
+  }
+
+  .modal {
+    padding-top: 80px;
+    margin-bottom: 80px;
+
+    &__links {
+      margin-bottom: 40px;
+    }
+
+    &__link {
+      font-size: 20px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+
+    &__link--active {}
+
+    &__form {}
+  }
+
+  .modal-form {
+
+    &__label {}
+
+    &__input {}
+
+    &__text {}
+
+    &__checkbox {}
+
+    &__check {}
+
+    &__btn {}
+
+    &__link {}
   }
 }
