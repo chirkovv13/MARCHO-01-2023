@@ -375,4 +375,41 @@
 
     &__date {}
   }
+
+  .map {
+
+    & iframe {
+      max-width: 270px;
+      height: 200px;
+    }
+  }
+
+  .contact {
+
+    &__inner {}
+
+    &__content {}
+
+    &__title {}
+
+    &__text {}
+
+    &__list {}
+
+    &__item {}
+
+    &__svg-box {
+      margin-right: 10px;
+    }
+
+    &__link-box {}
+
+    &__link {}
+
+    &__form {
+      & .comments__form-textarea {
+        height: 150px;
+      }
+    }
+  }
 }

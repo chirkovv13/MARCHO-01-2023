@@ -374,4 +374,36 @@
 
     &__date {}
   }
+
+  .map {
+    display: flex;
+    justify-content: center;
+
+    & iframe {
+      max-width: 900px;
+    }
+  }
+
+  .contact {
+
+    &__inner {}
+
+    &__content {}
+
+    &__title {}
+
+    &__text {}
+
+    &__list {}
+
+    &__item {}
+
+    &__svg-box {}
+
+    &__link-box {}
+
+    &__link {}
+
+    &__form {}
+  }
 }
