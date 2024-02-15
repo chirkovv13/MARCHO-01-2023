@@ -1,0 +1,502 @@
+@media (max-width: 768px) {
+
+  // global-style
+
+  .title {
+    font-size: 32px;
+  }
+
+  // components-style
+
+  .header {
+    position: relative;
+
+    &__menu {
+      order: 1;
+    }
+
+    &__menu-btn {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 30px;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+
+      & svg {
+        fill: $title;
+      }
+    }
+
+    &__menu-list {
+      position: absolute;
+      z-index: 10;
+      top: 110px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      transform: translateY(-150%);
+      transition: transform 0.6s;
+
+      &.header__menu-list--active {
+        transform: translateY(0%);
+      }
+    }
+
+    &__menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: $bg;
+      border: 1px solid $default;
+
+      &:not(:last-child),
+      &:last-child {
+        margin: 0;
+      }
+
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .user-nav {
+    margin: 0 40px 0 auto;
+  }
+
+  .footer {
+
+    &__top-contact {
+      max-width: 220px;
+    }
+  }
+
+  .product-item--sale {
+
+    & .product-item__box::before {
+      top: 15px;
+      left: 15px;
+      max-width: 55px;
+    }
+  }
+
+  .top {
+
+    &__container {
+      background-position-x: 34%;
+      background-size: cover;
+    }
+
+    &__title {}
+  }
+
+  .bredcrumbs {
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+  }
+
+  // index-style
+
+  .top-slider {
+    padding-top: 35px;
+
+    &__content {
+      padding: 20px 0;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__text {
+      margin-bottom: 25px;
+    }
+
+    &__img {
+      max-height: 350px;
+      max-width: 270px;
+    }
+  }
+
+  .categories {
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 400px;
+    }
+
+    &__item {
+      width: 47%;
+      padding: 15px;
+
+      &:nth-child(1) {
+        background-position: 30px 10%;
+        background-color: #f4dff0;
+      }
+
+      &:nth-child(2) {
+        padding: 15px;
+        background-position: 100% 65px;
+        background-color: #d7efef;
+      }
+
+      &:nth-child(3) {
+        background-position: 5px 25px;
+        background-color: #fff6a7;
+      }
+
+      &:nth-child(4) {
+        background-color: #ededed;
+      }
+    }
+  }
+
+  .product {
+
+    &__list {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+
+  .time {
+
+    &__item {
+      width: 100px;
+      height: 100px;
+
+      & span {
+        font-size: 32px;
+      }
+    }
+  }
+
+  .partners {
+
+    &__list {
+      justify-content: center;
+      height: 100%;
+    }
+
+    &__item {
+      margin: 10px;
+    }
+  }
+
+  .modal {
+
+    &__links {}
+
+    &__link {}
+
+    &__link--active {}
+
+    &__form {}
+  }
+
+  .modal-form {
+
+    &__label {}
+
+    &__input {}
+
+    &__text {}
+
+    &__checkbox {}
+
+    &__check {}
+
+    &__btn {}
+
+    &__link {}
+  }
+
+  .page-404 {
+
+    &__inner {}
+
+    &__content {}
+
+    &__tittle {}
+
+    &__text {}
+
+    &__btn {}
+
+    &__img {
+      max-height: 200px;
+    }
+  }
+
+  .blog-page {
+
+    &__inner {}
+
+    &__content {}
+
+    &__item {}
+
+    &__item-img-link {
+      img {
+        height: 300px;
+      }
+    }
+
+    &__item-box {}
+
+    &__item-subtitle {}
+
+    &__item-subtitle-link {}
+
+    &__item-info-box {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    &__item-info {}
+
+    &__item-author-link {}
+
+    &__item-date {}
+
+    &__item-text {}
+
+    &__item-img-link--video {}
+
+    &__item--slider {}
+
+    &__slider {
+      height: 300px;
+    }
+
+    &__item-img {
+      height: 300px;
+      object-fit: cover;
+    }
+
+    &__item--no-image {}
+
+    &__aside {}
+  }
+
+  .blog-one {
+
+    &__inner {}
+
+    &__content {}
+
+    &__img {
+      height: 280px;
+    }
+
+    &__box {
+
+      & .blog-one__img-left,
+      .blog-one__img-right {
+        max-width: 100%;
+        float: none;
+        margin: 0 0 10px 0;
+      }
+    }
+
+    &__info-list {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    &__item {}
+
+    &__item-link {}
+
+    &__img-left {}
+
+    &__author {}
+
+    &__author-info {}
+
+    &__author-tags {}
+
+    &__author-link {}
+
+    &__author-share {}
+
+    &__author-social {}
+
+    &__author-content {}
+
+    &__author-img {}
+
+    &__author-box {}
+
+    &__author-name {}
+
+    &__author-descr {}
+
+    &__comments {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .comments {
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__img-box {}
+
+    &__img {}
+
+    &__content {}
+
+    &__content-top {}
+
+    &__content-name {}
+
+    &__content-date {}
+
+    &__content-text {}
+
+    &__content-link {}
+
+    &__form {}
+
+    &__rating-subtitle {}
+
+    &__form-input-box {
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    &__form-name {}
+
+    &__form-email {}
+
+    &__form-textarea {}
+
+    &__form-btn {}
+  }
+
+  .filter {
+
+    &__list {}
+
+    &__item {}
+
+    &__subtitle {}
+
+    &__search-form {}
+
+    &__search-input {}
+
+    &__search-btn {}
+
+    &__btn {}
+
+    &__category-form {}
+
+    &__category-label {}
+
+    &__category-input {}
+
+    &__category-checkbox {}
+
+    &__tags-form {}
+
+    &__tags-label {}
+
+    &__tags-input {}
+
+    &__tags-checkbox {}
+  }
+
+  .person {
+
+    &__img {}
+
+    &__name {}
+
+    &__post {}
+
+    &__text {}
+
+    &__social {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .latest-post {
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+
+    &__img {}
+
+    &__box {}
+
+    &__title {}
+
+    &__date {}
+  }
+
+  .map {
+
+    & iframe {
+      max-width: 500px;
+      height: 350px;
+    }
+  }
+
+  .contact {
+
+    &__inner {}
+
+    &__content {}
+
+    &__title {
+      max-width: 500px;
+      line-height: 1.3;
+    }
+
+    &__text {}
+
+    &__list {}
+
+    &__item {}
+
+    &__svg-box {}
+
+    &__link-box {}
+
+    &__link {}
+
+    &__form {}
+  }
+}

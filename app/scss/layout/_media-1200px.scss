@@ -1,0 +1,409 @@
+@media (max-width: 1200px) {
+
+  // global-style
+
+  .title {
+    font-size: 42px;
+  }
+
+  // components-style
+
+  .footer {
+
+    &__top-text {
+      max-width: 400px;
+    }
+  }
+
+  .product-item {
+
+    &--hover {
+      .product-item__link-box {
+        opacity: 1;
+        display: flex;
+      }
+    }
+
+    &__link-box {
+      display: none;
+    }
+  }
+
+  .top {
+
+    &__container {
+      padding: 120px 0;
+      background-size: 130%;
+    }
+
+    &__title {}
+  }
+
+  .bredcrumbs {
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+  }
+
+  // index-style
+
+  .top-slider {
+
+    &__item {
+      padding: 0 20px;
+    }
+
+    &__content {
+      padding: 80px 0;
+    }
+
+    &__title {
+      max-width: 640px;
+      width: 100%;
+      font-size: 46px;
+    }
+
+    &__img {
+      max-width: 470px;
+      height: 560px;
+      object-position: left;
+    }
+  }
+
+  .categories {
+
+    &__item:first-child {
+      background-position: top left;
+    }
+  }
+
+  .info {
+
+    &__item {
+      padding: 50px 35px;
+    }
+  }
+
+  .product {
+
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+
+    }
+  }
+
+  .promo {
+    padding: 120px 0;
+  }
+
+  .blog {
+    padding: 120px 0;
+
+    &__list {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__img-link {
+      & img {
+        max-width: 100%;
+      }
+    }
+
+    &__content {
+      padding: 20px;
+    }
+
+    &__info {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .modal {
+
+    &__links {}
+
+    &__link {}
+
+    &__link--active {}
+
+    &__form {}
+  }
+
+  .modal-form {
+
+    &__label {}
+
+    &__input {}
+
+    &__text {}
+
+    &__checkbox {}
+
+    &__check {}
+
+    &__btn {}
+
+    &__link {}
+  }
+
+  .blog-page {
+
+    & .filter__item:not(:first-child) {
+      display: none;
+    }
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__content {
+      max-width: 100%;
+      margin: auto;
+    }
+
+    &__item {}
+
+    &__item-img-link {}
+
+    &__item-box {}
+
+    &__item-subtitle {}
+
+    &__item-subtitle-link {}
+
+    &__item-info-box {}
+
+    &__item-info {}
+
+    &__item-author-link {}
+
+    &__item-date {}
+
+    &__item-text {}
+
+    &__item-img-link--video {}
+
+    &__item--slider {}
+
+    &__slider {}
+
+    &__item-img {
+      width: 100%;
+    }
+
+    &__item--no-image {}
+
+    &__aside {
+      order: -1;
+      max-width: 100%;
+    }
+  }
+
+  .blog-one {
+
+    &__inner {}
+
+    &__content {}
+
+    &__img {
+      max-width: 100%;
+    }
+
+    &__box {}
+
+    &__info-list {}
+
+    &__item {}
+
+    &__item-link {}
+
+    &__img-left {}
+
+    &__author {}
+
+    &__author-info {}
+
+    &__author-tags {}
+
+    &__author-link {}
+
+    &__author-share {}
+
+    &__author-social {}
+
+    &__author-content {}
+
+    &__author-img {}
+
+    &__author-box {}
+
+    &__author-name {}
+
+    &__author-descr {}
+
+    &__comments {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .comments {
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__img-box {}
+
+    &__img {}
+
+    &__content {}
+
+    &__content-top {}
+
+    &__content-name {}
+
+    &__content-date {}
+
+    &__content-text {}
+
+    &__content-link {}
+
+    &__form {}
+
+    &__rating-subtitle {}
+
+    &__form-input-box {}
+
+    &__form-name {}
+
+    &__form-email {}
+
+    &__form-textarea {}
+
+    &__form-btn {}
+  }
+
+  .filter {
+
+    &__list {}
+
+    &__item {}
+
+    &__subtitle {}
+
+    &__search-form {}
+
+    &__search-input {
+      max-width: 100%;
+    }
+
+    &__search-btn {
+      max-width: 120px;
+      width: 100%;
+    }
+
+    &__btn {}
+
+    &__category-form {}
+
+    &__category-label {}
+
+    &__category-input {}
+
+    &__category-checkbox {}
+
+    &__tags-form {}
+
+    &__tags-label {}
+
+    &__tags-input {}
+
+    &__tags-checkbox {}
+  }
+
+  .person {
+    display: none;
+
+    &__img {}
+
+    &__name {}
+
+    &__post {}
+
+    &__text {}
+
+    &__social {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .latest-post {
+    display: none;
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+
+    &__img {}
+
+    &__box {}
+
+    &__title {}
+
+    &__date {}
+  }
+
+  .map {
+    display: flex;
+    justify-content: center;
+
+    & iframe {
+      max-width: 900px;
+    }
+  }
+
+  .contact {
+
+    &__inner {}
+
+    &__content {}
+
+    &__title {}
+
+    &__text {}
+
+    &__list {}
+
+    &__item {}
+
+    &__svg-box {}
+
+    &__link-box {}
+
+    &__link {}
+
+    &__form {}
+  }
+}

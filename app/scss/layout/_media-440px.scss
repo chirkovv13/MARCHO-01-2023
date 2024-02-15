@@ -1,0 +1,415 @@
+@media (max-width: 440px) {
+
+  // global-style
+
+  // components-style
+
+  .header {
+
+    &__menu {
+      order: 0;
+    }
+
+    &__menu-list {
+      top: 150px;
+    }
+  }
+
+  .user-nav {
+    justify-content: end;
+    margin: 0;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .footer {
+
+    &__top-items {
+      margin-bottom: 20px;
+    }
+
+    &__top-list {
+      gap: 0 50px;
+    }
+
+    &__top-form {
+      flex-direction: column;
+    }
+
+    &__top-btn {
+      max-width: 100%;
+    }
+  }
+
+  .top {
+
+    &__container {}
+
+    &__title {
+      padding-left: 0;
+    }
+  }
+
+  .bredcrumbs {
+    padding-left: 0;
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+  }
+
+  // index-style
+
+  .top-slider {
+
+    &__button {
+      max-width: 120px;
+    }
+  }
+
+  .video {
+
+    &__popup {
+      height: 200px;
+    }
+
+    &__img {
+      height: 80px;
+    }
+  }
+
+  .time {
+
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-self: center;
+      gap: 20px;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+  }
+
+  .partners {
+
+    &__item {
+      max-width: 75px;
+    }
+  }
+
+  .modal {
+
+    &__links {}
+
+    &__link {}
+
+    &__link--active {}
+
+    &__form {}
+  }
+
+  .modal-form {
+
+    &__label {}
+
+    &__input {}
+
+    &__text {}
+
+    &__checkbox {}
+
+    &__check {}
+
+    &__btn {}
+
+    &__link {}
+  }
+
+  .blog-page {
+
+    &__inner {}
+
+    &__content {}
+
+    &__item {}
+
+    &__item-img-link {
+      img {
+        height: 150px;
+      }
+    }
+
+    &__item-box {}
+
+    &__item-subtitle {}
+
+    &__item-subtitle-link {}
+
+    &__item-info-box {}
+
+    &__item-info {}
+
+    &__item-author-link {}
+
+    &__item-date {}
+
+    &__item-text {}
+
+    &__item-img-link--video {}
+
+    &__item--slider {
+      & .slick-prev {
+        left: 10px;
+      }
+
+      & .slick-next {
+        right: 10px;
+      }
+    }
+
+    &__slider {
+      height: 150px;
+    }
+
+    &__item-img {
+      height: 150px;
+    }
+
+    &__item--no-image {}
+
+    &__aside {}
+  }
+
+  .blog-one {
+
+    &__inner {}
+
+    &__content {}
+
+    &__img {
+      height: 140px;
+    }
+
+    &__box {
+
+      & .blog-one__img-left,
+      .blog-one__img-right {
+        height: 140px;
+      }
+    }
+
+    &__info-list {
+      flex-direction: column;
+    }
+
+    &__item {}
+
+    &__item-link {}
+
+    &__img-left {}
+
+    &__author {}
+
+    &__author-info {}
+
+    &__author-tags {}
+
+    &__author-link {}
+
+    &__author-share {}
+
+    &__author-social {}
+
+    &__author-content {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__author-img {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+
+    &__author-box {}
+
+    &__author-name {}
+
+    &__author-descr {}
+
+    &__comments {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .comments {
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &__img-box {
+      margin: 0;
+    }
+
+    &__img {}
+
+    &__content {}
+
+    &__content-top {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    &__content-name {
+      border: none;
+    }
+
+    &__content-date {}
+
+    &__content-text {}
+
+    &__content-link {}
+
+    &__form {}
+
+    &__rating-subtitle {}
+
+    &__form-input-box {}
+
+    &__form-name {}
+
+    &__form-email {}
+
+    &__form-textarea {
+      height: 150px;
+    }
+
+    &__form-btn {}
+  }
+
+  .filter {
+
+    &__list {}
+
+    &__item {}
+
+    &__subtitle {}
+
+    &__search-form {}
+
+    &__search-input {}
+
+    &__search-btn {
+      width: auto;
+    }
+
+    &__btn {}
+
+    &__category-form {}
+
+    &__category-label {}
+
+    &__category-input {}
+
+    &__category-checkbox {}
+
+    &__tags-form {}
+
+    &__tags-label {}
+
+    &__tags-input {}
+
+    &__tags-checkbox {}
+  }
+
+  .person {
+
+    &__img {}
+
+    &__name {}
+
+    &__post {}
+
+    &__text {}
+
+    &__social {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .latest-post {
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+
+    &__img {}
+
+    &__box {}
+
+    &__title {}
+
+    &__date {}
+  }
+
+  .map {
+
+    & iframe {
+      max-width: 270px;
+      height: 200px;
+    }
+  }
+
+  .contact {
+
+    &__inner {}
+
+    &__content {}
+
+    &__title {}
+
+    &__text {}
+
+    &__list {}
+
+    &__item {}
+
+    &__svg-box {
+      margin-right: 10px;
+    }
+
+    &__link-box {}
+
+    &__link {}
+
+    &__form {
+      & .comments__form-textarea {
+        height: 150px;
+      }
+    }
+  }
+}

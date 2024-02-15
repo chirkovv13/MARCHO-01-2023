@@ -5,7 +5,12 @@
     justify-content: space-between;
     text-align: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 40px 0;
+  }
+
+  &__menu-btn {
+    display: none;
   }
 
   &__menu-list {
@@ -16,23 +21,25 @@
   &__menu-item:last-child {
     margin-right: 13px;
   }
-  
+
   &__menu-item:not(:last-child) {
     margin-right: 34px;
   }
-  
+
   &__menu-link {
     padding: 4px 2px;
     @extend %roboto-700;
     color: $title;
+    border-bottom: 1px solid transparent;
     transition: color 0.5s, border 0.5s;
+
     &:hover {
       @extend %roboto-700;
       color: $accent;
       border-bottom: 1px solid $accent;
     }
   }
-  
+
   &__menu-link--active {
     @extend %roboto-700;
     color: $accent;
@@ -46,13 +53,16 @@
   &__item:last-child {
     margin-right: 12px;
   }
-  
+
   &__item:not(:last-child) {
     margin-right: 25px;
   }
-  
+
   &__item-link {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__num {

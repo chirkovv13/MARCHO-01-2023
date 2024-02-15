@@ -129,6 +129,29 @@ $(function () {
     infinite: false,
   });
 
+  // burger-menu btn for a tablet
+  $('.header__menu-btn').on('click', function () {
+    $('.header__menu-list').toggleClass('header__menu-list--active');
+    $('.main').on('click', function () {
+      $('.header__menu-list').removeClass('header__menu-list--active')
+    });
+  });
 
+  // footer-menu list for a tablet
+  $('.footer__top-subtitle--active').on('click', function () {
+    if (window.matchMedia('(max-width: 344px)').matches) {
+      $(this).next().slideToggle();
+    } else {
+      $('.footer__top-navigation').slideToggle()
+    }
+  });
+
+  // product-item "link-box" for a tablet
+  $('.product-item').on('click', function () {
+    if (window.matchMedia('(max-width: 1201px)').matches) {
+      $('.product-item').removeClass('product-item--hover');
+      $(this).toggleClass('product-item--hover');
+    } else {}
+  });
 
 });

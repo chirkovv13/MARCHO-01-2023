@@ -1,0 +1,310 @@
+@media (max-width: 1400px) {
+
+  // global-style
+
+  // components-style
+
+  .top {
+
+    &__container {}
+
+    &__title {}
+  }
+
+  .bredcrumbs {
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+  }
+
+  // index-style
+
+  .top-slider {
+
+    &__item {
+      padding-left: 100px;
+    }
+
+    &__content {
+      padding: 100px 0;
+    }
+
+    &__img {
+      max-width: 470px;
+      height: 560px;
+      object-position: left;
+    }
+  }
+
+  .info {
+    &::after {
+      bottom: -14px;
+      right: -12px;
+    }
+  }
+
+  .promo {
+    background-position: 35%;
+  }
+
+  .blog {
+
+    &__list::after {
+      right: 5px;
+    }
+  }
+
+  .modal {
+
+    &__links {}
+
+    &__link {}
+
+    &__link--active {}
+
+    &__form {}
+  }
+
+  .modal-form {
+
+    &__label {}
+
+    &__input {}
+
+    &__text {}
+
+    &__checkbox {}
+
+    &__check {}
+
+    &__btn {}
+
+    &__link {}
+  }
+
+  .blog-page {
+
+    &__inner {}
+
+    &__content {}
+
+    &__item {}
+
+    &__item-img-link {}
+
+    &__item-box {}
+
+    &__item-subtitle {}
+
+    &__item-subtitle-link {}
+
+    &__item-info-box {}
+
+    &__item-info {}
+
+    &__item-author-link {}
+
+    &__item-date {}
+
+    &__item-text {}
+
+    &__item-img-link--video {}
+
+    &__item--slider {}
+
+    &__slider {}
+
+    &__item-img {}
+
+    &__item--no-image {}
+
+    &__aside {}
+  }
+
+  .blog-one {
+
+    &__inner {}
+
+    &__content {}
+
+    &__img {}
+
+    &__box {}
+
+    &__info-list {}
+
+    &__item {}
+
+    &__item-link {}
+
+    &__img-left {}
+
+    &__author {}
+
+    &__author-info {}
+
+    &__author-tags {}
+
+    &__author-link {}
+
+    &__author-share {}
+
+    &__author-social {}
+
+    &__author-content {}
+
+    &__author-img {}
+
+    &__author-box {}
+
+    &__author-name {}
+
+    &__author-descr {}
+
+    &__comments {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .comments {
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__img-box {}
+
+    &__img {}
+
+    &__content {}
+
+    &__content-top {}
+
+    &__content-name {}
+
+    &__content-date {}
+
+    &__content-text {}
+
+    &__content-link {}
+
+    &__form {}
+
+    &__rating-subtitle {}
+
+    &__form-input-box {}
+
+    &__form-name {}
+
+    &__form-email {}
+
+    &__form-textarea {}
+
+    &__form-btn {}
+  }
+
+  .filter {
+
+    &__list {}
+
+    &__item {}
+
+    &__subtitle {}
+
+    &__search-form {}
+
+    &__search-input {}
+
+    &__search-btn {}
+
+    &__btn {}
+
+    &__category-form {}
+
+    &__category-label {}
+
+    &__category-input {}
+
+    &__category-checkbox {}
+
+    &__tags-form {}
+
+    &__tags-label {}
+
+    &__tags-input {}
+
+    &__tags-checkbox {}
+  }
+
+  .person {
+
+    &__img {}
+
+    &__name {}
+
+    &__post {}
+
+    &__text {}
+
+    &__social {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .latest-post {
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+
+    &__img {}
+
+    &__box {}
+
+    &__title {}
+
+    &__date {}
+  }
+
+  .contact {
+
+    &__inner {}
+
+    &__content {}
+
+    &__title {}
+
+    &__text {}
+
+    &__list {}
+
+    &__item {}
+
+    &__svg-box {}
+
+    &__link-box {}
+
+    &__link {}
+
+    &__form {}
+  }
+}

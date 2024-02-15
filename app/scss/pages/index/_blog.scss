@@ -16,6 +16,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
   }
 
   &__list::after {
@@ -42,10 +43,6 @@
 
   &__item {
     border: 1px solid $bg-dark;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 30px;
   }
 
   &__item:hover {

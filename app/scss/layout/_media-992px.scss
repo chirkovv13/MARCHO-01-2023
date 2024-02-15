@@ -1,0 +1,556 @@
+@media (max-width: 992px) {
+
+  // global-style
+  .logo {
+    max-width: 140px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .descr {
+    font-size: 20px;
+  }
+
+  // components-style
+
+  .header {
+
+    &__menu-item:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  .footer {
+
+    &__top-list {
+      justify-content: start;
+      flex-wrap: wrap;
+      gap: 30px 50px;
+    }
+
+    &__top-text {
+      max-width: 700px;
+    }
+
+    &__top-label {
+      max-width: 700px;
+    }
+  }
+
+  .product-item {
+
+    &__box {
+      margin-bottom: 15px;
+    }
+
+    &__img {
+      min-width: 100%;
+      height: 300px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+  }
+
+  .top {
+
+    &__container {
+      padding: 80px 0;
+    }
+
+    &__title {}
+  }
+
+  .bredcrumbs {
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+  }
+
+  // index-style
+
+  .top-slider {
+    background-size: 0%;
+
+    &__content {
+      padding: 40px 0;
+    }
+
+    &__img {
+      max-height: 460px;
+      max-width: 400px;
+    }
+  }
+
+  .categories {
+    padding: 80px 0;
+
+    &__text {
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "one two"
+        "three four";
+    }
+
+    &__item {
+      background-position: top right;
+
+      &:nth-child(2) {
+        padding: 40px;
+      }
+    }
+  }
+
+  .info {
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+      padding: 20px;
+    }
+
+    &__subtitle {
+      padding: 15px;
+    }
+
+    &__text {
+      width: 100%;
+    }
+  }
+
+  .video {
+    padding: 80px 0;
+
+    &__inner {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__popup {
+      height: 400px;
+      background-position: top center;
+    }
+
+    &__content {
+      align-items: center;
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+
+  .product {
+    padding: 80px 0;
+
+    &__text {
+      margin-bottom: 40px;
+    }
+  }
+
+  .promo {
+    margin-bottom: 80px;
+    padding: 80px 0;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__link {
+      font-family: 'Roboto-Regular', sans-serif;
+      font-weight: 400;
+      border: none;
+      color: $white;
+      background-color: $accent;
+      box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+    }
+  }
+
+  .time {
+
+    &__item {
+      & span {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .partners {
+
+    &__list {
+      flex-wrap: wrap;
+    }
+  }
+
+  .blog {
+    padding: 80px 0;
+
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__list::after {
+      display: none;
+    }
+  }
+
+  .modal {
+    padding-top: 80px;
+    margin-bottom: 80px;
+
+    &__links {
+      margin-bottom: 40px;
+    }
+
+    &__link {
+      font-size: 20px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+
+    &__link--active {}
+
+    &__form {}
+  }
+
+  .modal-form {
+
+    &__label {}
+
+    &__input {}
+
+    &__text {}
+
+    &__checkbox {}
+
+    &__check {}
+
+    &__btn {}
+
+    &__link {}
+  }
+
+  .page-404 {
+    padding: 80px 0;
+
+    &__inner {}
+
+    &__content {}
+
+    &__tittle {}
+
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__btn {}
+
+    &__img {}
+  }
+
+  .blog-page {
+    padding: 80px 0;
+
+    &__inner {}
+
+    &__content {}
+
+    &__item {
+      margin-bottom: 30px;
+    }
+
+    &__item-img-link {}
+
+    &__item-box {}
+
+    &__item-subtitle {}
+
+    &__item-subtitle-link {}
+
+    &__item-info-box {}
+
+    &__item-info {}
+
+    &__item-author-link {}
+
+    &__item-date {}
+
+    &__item-text {}
+
+    &__item-img-link--video {}
+
+    &__item--slider {}
+
+    &__slider {}
+
+    &__item-img {}
+
+    &__item--no-image {}
+
+    &__aside {}
+  }
+
+  .blog-one {
+
+    &__inner {}
+
+    &__content {}
+
+    &__img {}
+
+    &__box {
+      padding: 15px;
+
+      & h4 {
+        font-size: 20px;
+      }
+
+      & blockquote {
+        padding: 15px;
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+
+      & p {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__info-list {}
+
+    &__item {}
+
+    &__item-link {}
+
+    &__img-left {}
+
+    &__author {}
+
+    &__author-info {}
+
+    &__author-tags {}
+
+    &__author-link {}
+
+    &__author-share {}
+
+    &__author-social {}
+
+    &__author-content {}
+
+    &__author-img {}
+
+    &__author-box {}
+
+    &__author-name {}
+
+    &__author-descr {}
+
+    &__comments {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .comments {
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__img-box {}
+
+    &__img {}
+
+    &__content {}
+
+    &__content-top {}
+
+    &__content-name {}
+
+    &__content-date {}
+
+    &__content-text {}
+
+    &__content-link {}
+
+    &__form {}
+
+    &__rating-subtitle {}
+
+    &__form-input-box {}
+
+    &__form-name {}
+
+    &__form-email {}
+
+    &__form-textarea {}
+
+    &__form-btn {}
+  }
+
+  .filter {
+
+    &__list {}
+
+    &__item {
+      padding: 20px;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    &__search-form {}
+
+    &__search-input {}
+
+    &__search-btn {}
+
+    &__btn {}
+
+    &__category-form {}
+
+    &__category-label {}
+
+    &__category-input {}
+
+    &__category-checkbox {}
+
+    &__tags-form {}
+
+    &__tags-label {}
+
+    &__tags-input {}
+
+    &__tags-checkbox {}
+  }
+
+  .person {
+
+    &__img {}
+
+    &__name {}
+
+    &__post {}
+
+    &__text {}
+
+    &__social {}
+  }
+
+  .social {
+
+    &__icon {}
+
+    &__link {}
+  }
+
+  .latest-post {
+
+    &__subtitle {}
+
+    &__list {}
+
+    &__item {}
+
+    &__link {}
+
+    &__img {}
+
+    &__box {}
+
+    &__title {}
+
+    &__date {}
+  }
+
+  .map {
+    padding: 80px 0;
+
+    & iframe {
+      max-width: 700px;
+      height: 400px;
+    }
+  }
+
+  .contact {
+    margin-bottom: 80px;
+
+    &__inner {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      margin-right: 0;
+    }
+
+    &__title {
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      margin-bottom: 25px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 25px;
+      width: 100%;
+    }
+
+    &__item {}
+
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &__svg-box {}
+
+    &__link-box {}
+
+    &__link {}
+
+    &__form {
+      padding: 30px;
+    }
+  }
+}

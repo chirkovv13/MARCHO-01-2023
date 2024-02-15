@@ -20,11 +20,8 @@
   }
 
   &__title {
-    margin-bottom: 20px;
-    font-size: 48px;
     line-height: 58px;
-    @extend %roboto-700;
-    color: $title;
+    text-transform: capitalize;
   }
 
   &__text {
@@ -44,8 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 60px;
-    width: 100%;
+    width: 60px;
     height: 60px;
     margin-right: 20px;
     background-color: $white;
